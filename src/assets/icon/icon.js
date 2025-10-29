@@ -18,6 +18,7 @@ import LinkdeenIcon from "./linkdeen-icon";
 import InstagramIcon from "./instagram-icon";
 import FacebookIcon from "./facebook-icon";
 import TwitterIcon from "./twitter-icon";
+import HeroStarIcon from "./hero-star-icon";
 
 export {
     FigmaIcon,
@@ -34,12 +35,12 @@ export {
     TickIcon,
     WhatsappIcon,
     EmailIcon,
-   
     BeIcon,
     ChromeIcon,
     LinkdeenIcon,
     InstagramIcon,
     TwitterIcon,
     FacebookIcon,
-
+    HeroStarIcon,
+    
 }

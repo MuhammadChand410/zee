@@ -140,8 +140,6 @@ export default function FrameHome() {
                                                 strokeLinejoin="round"
                                             />
                                         </svg>
-
-
                                     </div>
                                 </button>
                                 <div className={` overflow-hidden transition-all duration-300 ${open === index ? 'max-h-[1000px]' : 'max-h-0'}`}>

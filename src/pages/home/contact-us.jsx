@@ -85,13 +85,13 @@ export default function ContactUs() {
     return (
         <section className="py-8 sm:py-20 bg-[#0B0B0B]">
             <div className="container">
-                <div className="flex sm:flex-row flex-col justify-between gap-8 sm:gap-16">
+                <div className="flex md:flex-row flex-col justify-between gap-8 sm:gap-16">
                     <div className="max-w-[576px]">
                         <div className="grid gap-8">
                             <div>
                                 <HeroContant subheading='Contact us' classNameSub='!text-start !pb-4 sm:!pb-8' heading='Lets work on what you care about!' classNamehead='!text-start' desc='Got a project in mind? From a full UI/UX refresh to a brand-new digital experience, we’re ready to help. Let’s turn your vision into reality' classNameDesc='!text-start' />
                             </div>
-                            <div className="flex sm:flex-row flex-col gap-8 sm:gap-12">
+                            <div className="flex md:flex-row flex-col gap-8 sm:gap-12">
                                 {LINKDEN_PROFILE.map((card =>
                                     <div className="flex items-center gap-4" key={card.id}>
                                         <img src={card.thumbnail} alt="ali" width={48} height={48} />

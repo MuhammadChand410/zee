@@ -39,6 +39,7 @@ import B1  from './b1.jpg';
 import B2  from './b2.jpg';
 import B3  from './b3.png';
 import Zeeframe  from './zeeframe.png';
+import HeroBg  from './hero-bg.png';
 export {
    logoImage, 
    Video,
@@ -81,5 +82,6 @@ export {
    B2,
    B3,
    Zeeframe,
+   HeroBg,
    
 }

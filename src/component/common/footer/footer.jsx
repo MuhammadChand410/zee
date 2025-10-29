@@ -153,9 +153,9 @@ export default function Footer() {
                 <div className="container mx-auto px-4">
                     <div className="grid gap-8">
                         <img src={Zeeframe} alt="zeeframe" width={1241} height={181} />
-                        <div className="flex flex-col sm:flex-row gap-8 sm:gap-12">
+                        <div className="flex flex-col md:flex-row gap-8 sm:gap-12">
                             <div className="max-w-[446px]">
-                                <p className="text-[#BDBDBD] w-full sm:max-w-[393px] text-lg font-normal leading-[27px]">
+                                <p className="text-[#BDBDBD] w-full md:max-w-[393px] text-lg font-normal leading-[27px]">
                                     We transform ideas into user-centered digital experiences for businesses worldwide,
                                     from Fortune 500s to startups, using Figma, Webflow, and no-code solutions.
                                 </p>
@@ -179,7 +179,7 @@ export default function Footer() {
                                     </div>
                                 ))}
                             </div> */}
-                            <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 sm:flex sm:flex-row  sm:gap-10">
+                            <div className="grid grid-cols-2 md:grid-cols-1 gap-8 md:flex md:flex-row  sm:gap-10">
                                 {FOOTER_LINKS.map((card) => (
                                     <div
                                         key={card.title}
@@ -205,9 +205,9 @@ export default function Footer() {
                             </div>
 
                         </div>
-                        <div className="px-6 py-6 bg-[#1A1A1A]">
+                        <div className="px-6 py-6 bg-[#1A1A1A] w-fit md:w-full">
                             <div className="px-5 py-5">
-                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-4 ">
+                                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 ">
                                     {FOOTER_CARDS.map((card =>
                                         <div className="grid gap-3" key={card.id}>
                                             <img src={card.thumbnail} alt="card-image" width={34} height={24} />

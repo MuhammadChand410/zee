@@ -1,6 +1,6 @@
 import HeroIcon from "../../assets/icon/hero-icon"
-import StarIcon from "../../assets/icon/star-icon";
-import { AdiQat, B1, B2, B3, Cisco, Figma, FigmaB, NissanMotor, Repurpose, Sketch, Trafilea, Vector, W, WalMart, Xd, YallaMotor } from "../../assets/images"
+import HeroStarIcon from "../../assets/icon/hero-star-icon";
+import { AdiQat, Cisco, Figma, FigmaB, HeroBg, NissanMotor, Repurpose, Sketch, Trafilea, Vector, W, WalMart, Xd, YallaMotor } from "../../assets/images"
 
 
 import React, { useState } from "react";
@@ -118,13 +118,16 @@ export default function HeroSectin({
     return (
         <section className="py-14 bg-black">
             <div className="container">
-                <div className="">
-                    {/* <img className="absolute z-0 top-0 left-[20px] hidden sm:block blur-[30px] opacity-[0.8]" src={B1} alt="" />
-                    <img className="absolute z-0 top-[150px] sm:top-0 -left-[20px] sm:left-[130px] " src={B2} alt="" />
-                    <img className="absolute z-0 top-0 right-0 blur-[30px] hidden sm:block opacity-[0.8]" src={B3} alt="" />
-                    <StarIcon /> */}
+                <div className="relative before:content-[''] before:absolute before:top-10 before:left-20 before:w-[300px] before:h-[300px] before:from-[#202020] before:to-[#333333] before:rounded-[60%] before:blur-2xl before:-z-10"></div>
+
+                <div className="absolute hidden md:block left-32 bottom-12">
+                    <img src={HeroBg} alt="beforecircle" height={435} width={429} />
                 </div>
-             <div className="grid gap-7 sm:gap-10 pb-5 sm:pb-10">
+
+                <div className="absolute hidden md:block left-31 bottom-10">
+                    <HeroStarIcon />
+                </div>
+                <div className="grid gap-7 sm:gap-10 pb-5 sm:pb-10">
                     <div className="grid justify-center">
                         <div
                             style={{
@@ -149,7 +152,11 @@ export default function HeroSectin({
                     </div>
                     <div className="grid justify-center">
                         <div className="grid gap-2 max-w-[900px]">
-                            <h1 className="sm:text-7xl text-4xl font-extrabold leading-[50px] sm:leading-[96px] text-white text-center">CREATIVE INTELLIGENCE IN EVERY PIXEL</h1>
+                            <div className="flex justify-center items-center">
+                                <h1 className="relative sm:text-7xl text-4xl font-extrabold leading-[50px] sm:leading-[96px] text-white text-center">CREATIVE INTELLIGENCE IN EVERY PIXEL <span className="absolute hidden md:block -right-12 top-3 bg-[#F3FE00] text-[#0B0B0B] font-bold px-2 py-1.5 rounded-lg text-sm rotate-8">
+                                    NO CODE
+                                </span></h1>
+                            </div>
                             <p className="sm:text-xl text-base text-white font-normal text-center">We craft <span className="text-xl font-normal text-[#F3FE00]">stunning</span> designs for businesses worldwide.</p>
                         </div>
                     </div>
@@ -215,69 +222,3 @@ export default function HeroSectin({
 
 
 
-
-// <section className="hero-section h-[750px]">
-
-//     <div className="container">
-//         <div className="relative ">
-
-//             <img className="absolute z-0 top-0 left-[20px] hidden sm:block blur-[30px] opacity-[0.8]" src={bg1} alt="" />
-//             <img className="absolute z-0 top-[150px] sm:top-0 -left-[20px] sm:left-[130px] " src={bg2} alt="" />
-//             <img className="absolute z-0 top-0 right-0 blur-[30px] hidden sm:block opacity-[0.8]" src={bg3} alt="" />
-//             <StarIcon />
-
-//             <div className="absolute z-10 top-0 left-0">
-//                 <div className="w-[327px] sm:w-[600px] mt-8 sm:mt-12 mx-auto bg-[#0D0D0C] rounded-[8px] border border-[#303030] flex flex-col sm:flex-row items-start sm:items-center justify-center gap-5 p-2">
-//                     <div className="flex items-center gap-3">
-//                         <img src={industrylogo} alt="" />
-//                         <p>Trusted by startups to craft $100M+ designs with</p>
-//                     </div>
-
-//                     <ul className="flex items-center">
-//                         {Startups.map(item => (
-//                             <li key={item.id}
-//                                 className="-ms-[7px] w-[32px] h-[32px] rounded-full bg-[#303030] border border-[#0D0D0C] flex items-center justify-center ">
-//                                 {item.icon}
-//                             </li>
-
-//                         ))}
-
-
-//                     </ul>
-//                 </div>
-//                 <div className="relative  flex flex-col items-center justify-center gap-3 py-12">
-//                     <h1 className="w-[330px] sm:w-[978px] text-center font-[Geologica] uppercase font-[800] text-[36px] sm:text-[72px] leading-[50px] sm:leading-[96px]">Creative Intelligence in Every Pixel</h1>
-//                     <p className="text-[20px] text-center capitalize text-[#FFFFFF] font-[Inter]"> We craft <span className="text-[#F3FE00] font-[Plus Jakarta Sans]"> stunning</span> designs for businesses worldwide.</p>
-//                     <span className="absolute hidden sm:block origin-right rotate-7 top-[60px] right-[45px] bg-[#F3FE00] py-[6px] px-2 rounded-[8px] text-[#0B0B0B] text-[12px] font-bold uppercase font-[Geologica]"> NO CODE</span>
-//                 </div>
-//                 <div className="flex items-center justify-center gap-[20px]">
-//                     <Button
-//                         path="/contact" hovertext={" Let's talk 🤙"} defaulttext={"Schedule Call"}
-//                         className="w-[170px] h-[48px] bg-white border border-white text-[#0B0B0B]  font-[Plus Jakarta Sans] leading-none "
-//                         showicon={false}
-//                     />
-//                     <Button
-//                         path="https://www.figma.com" target="_blank" hovertext={" Open "} defaulttext={"©2025 Work"}
-//                         className="w-[149px] h-[48px] bg-black border border-white font-[Inter] hover:border-[#F3FE00] "
-//                         showicon={false}
-//                     />
-//                 </div>
-//                 <p className="mt-8 sm:mt-[88px] text-center text-[14px] font-[500] uppercase font-[Plus Jakarta Sans] text-[#E7E7E7]">Trusted by Industry Leaders & Fast-Growing Startups</p>
-//                 <div className="py-5 mt-6">
-//                     <div className=" slide-track relative py-1 flex items-center justify-between gap-[48px]">
-//                         {companies.map(item => (
-//                             <div key={item.name} className=" h-[33px]">
-//                                 <img className="w-full h-full"
-//                                     src={item.image} alt={item.name}
-//                                     width={item.width}
-//                                     height={item.height}
-//                                 />
-//                             </div>
-//                         ))}
-
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-// </section>

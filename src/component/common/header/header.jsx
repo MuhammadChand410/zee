@@ -51,21 +51,11 @@ export default function Header() {
                         ))}
                     </ul>
 
-                    <button className="hidden md:flex group relative items-center justify-center gap-3 px-8 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden">
-                        <span className="transition-all duration-300 group-hover:opacity-0">
-                            Work with us
-                        </span>
-                        <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100">
-                            Let’s Talk
-                        </span>
-                        <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                            <ButtonArrow />
-                        </span>
-                    </button>
+                   
                     <div>
 
                     </div>
-                    {/* <Button text='Work with us' textt='Let’s Talk' className='!sm:hidden' /> */}
+                    <Button text='Work with us' textt='Let’s Talk' className='!sm:hidden' />
 
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}

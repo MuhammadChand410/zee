@@ -222,7 +222,7 @@ export default function Footer() {
                 </div>
             </footer>
 
-            <div className="floating_btn pr-14">
+            <div className="floating_btn">
                 <a target="_blank" href="https://wa.me/">
                     <div className="contact_icon">
                         <i className="fa fa-whatsapp my-float"></i>

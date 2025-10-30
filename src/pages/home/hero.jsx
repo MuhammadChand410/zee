@@ -4,6 +4,7 @@ import { AdiQat, Cisco, Figma, FigmaB, HeroBg, NissanMotor, Repurpose, Sketch, T
 
 
 import React, { useState } from "react";
+import ButtonHero from "../../component/common/header/button-hero";
 export default function HeroSectin({
     className,
     startIcon,
@@ -119,11 +120,9 @@ export default function HeroSectin({
         <section className="py-14 bg-black">
             <div className="container">
                 <div className="relative before:content-[''] before:absolute before:top-10 before:left-20 before:w-[300px] before:h-[300px] before:from-[#202020] before:to-[#333333] before:rounded-[60%] before:blur-2xl before:-z-10"></div>
-
                 <div className="absolute hidden md:block left-32 bottom-12">
                     <img src={HeroBg} alt="beforecircle" height={435} width={429} />
                 </div>
-
                 <div className="absolute hidden md:block left-31 bottom-10">
                     <HeroStarIcon />
                 </div>
@@ -135,9 +134,9 @@ export default function HeroSectin({
                                 background: "var(--Secondary-secondary-500, #0B0B0B)",
                             }}
                             className="flex sm:flex-row flex-col gap-3 rounded-2xl w-fit px-2 py-2">
-                            <div className="flex gap-3">
+                            <div className="flex gap-2 sm:gap-3">
                                 <HeroIcon />
-                                <p className="text-base font-normal text-white text-center">
+                                <p className="text-base font-normal text-white">
                                     Trusted by startups to craft $100M+ designs with
                                 </p>
                             </div>
@@ -161,47 +160,8 @@ export default function HeroSectin({
                         </div>
                     </div>
                     <div className="flex gap-5 justify-center pb-1 sm:pb-7">
-                        <button
-                            type={type}
-                            onClick={onClick}
-                            className={`group relative flex items-center justify-center gap-3 px-8 py-3 rounded-full border border-[#FFF] bg-[#FFF] text-black text-base font-semibold hover:bg-black hover:text-[#FFF] transition-all duration-300 overflow-hidden ${className || ""}`}
-                        >
-                            <span className="transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-full">
-                                Schedule Call
-                            </span>
-
-                            <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100 translate-x-full group-hover:translate-x-0">
-                                Let's Talk
-                            </span>
-
-                            {(startIcon || endIcon) && (
-                                <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                                    {endIcon || startIcon}
-                                </span>
-                            )}
-                        </button>
-                        {/* <Button text='Schedule Call' textt={`Let's Talk`} className='!bg-white  !border !border-[#FFF]  !text-black hover:bg-black hover:text-[#FFF]'/> */}
-
-                        <button
-                            type={type}
-                            onClick={onClick}
-                            className={`group relative flex items-center justify-center gap-3 px-5 py-3 rounded-full border border-white hover:border-[#F3FE00] bg-black text-[#FFF] text-base font-semibold hover:bg-black transition-all duration-300 overflow-hidden ${className || ""}`}
-                        >
-
-                            <span className="transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-full">
-                                © 2025 Work
-                            </span>
-
-                            <span className="absolute opacity-0  transition-all duration-300 group-hover:opacity-100 translate-x-full group-hover:translate-x-0 ">
-                                Open
-                            </span>
-
-                            {(startIcon || endIcon) && (
-                                <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                                    {endIcon || startIcon}
-                                </span>
-                            )}
-                        </button>
+                        <ButtonHero text='Schedule Call' textt={`Let's Talk`} />
+                        <ButtonHero text='© 2025 Work' textt='Open' className='!px-5 border border-white hover:border-[#F3FE00] bg-black !text-[#FFF] hover:bg-black' />
                     </div>
 
                     <p className="text-[#E7E7E7] text-sm font-medium text-center">TRUSTED BY INDUSTRY LEADERS & FAST-GROWING STARTUPS</p>

@@ -34,7 +34,7 @@ export default function BlogsSection() {
         },
     ]
     return (
-        <section className="py-20 bg-[#0B0B0B]">
+        <section className="py-8 sm:py-20 bg-[#0B0B0B]">
             <div className="container">
                 <div className="grid gap-8 sm:gap-12">
                     <div className="flex sm:flex-row flex-col  justify-between">

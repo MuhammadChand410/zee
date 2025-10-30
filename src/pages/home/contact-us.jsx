@@ -89,7 +89,7 @@ export default function ContactUs() {
                     <div className="max-w-[576px]">
                         <div className="grid gap-8">
                             <div>
-                                <HeroContant subheading='Contact us' classNameSub='!text-start !pb-4 sm:!pb-8' heading='Lets work on what you care about!' classNamehead='!text-start' desc='Got a project in mind? From a full UI/UX refresh to a brand-new digital experience, we’re ready to help. Let’s turn your vision into reality' classNameDesc='!text-start' />
+                                <HeroContant subheading='Contact us' classNameSub='!text-start !pb-4 sm:!pb-8' heading='Lets work on what you care about!' classNamehead='!text-start sm:!leading-[40px] !leading-[28px]' desc='Got a project in mind? From a full UI/UX refresh to a brand-new digital experience, we’re ready to help. Let’s turn your vision into reality' classNameDesc='!text-start' />
                             </div>
                             <div className="flex md:flex-row flex-col gap-8 sm:gap-12">
                                 {LINKDEN_PROFILE.map((card =>

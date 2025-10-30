@@ -40,6 +40,14 @@ import B2  from './b2.jpg';
 import B3  from './b3.png';
 import Zeeframe  from './zeeframe.png';
 import HeroBg  from './hero-bg.png';
+import AdvantageImage  from './advantage-image.png';
+import ProcessOne  from './process-1.webp';
+import ProcessTwo  from './process-2.webp';
+import ProcessThree  from './process-3.webp';
+import ProcessFour  from './process-4.webp';
+import ProcessFive  from './process-5.webp';
+import ProcessSix  from './process-6.webp';
+
 export {
    logoImage, 
    Video,
@@ -83,5 +91,12 @@ export {
    B3,
    Zeeframe,
    HeroBg,
+   AdvantageImage,
+   ProcessOne,
+   ProcessTwo,
+   ProcessThree,
+   ProcessFour,
+   ProcessFive,
+   ProcessSix,
    
 }

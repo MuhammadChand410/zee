@@ -1,4 +1,5 @@
 
+import Advantage from "./advantage";
 import BlogsSection from "./blogs-section";
 import ContactUs from "./contact-us";
 import FrameHome from "./frame-home";
@@ -15,6 +16,7 @@ export default function Home() {
             <HeroSectin />
             <VideoSection />
             <ServicesSection />
+            <Advantage />
             <SuccessStories />
             <NoiseEffect />
             <FrameHome />

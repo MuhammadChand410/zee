@@ -103,15 +103,64 @@ export default function HeroSectin({
             height: 32,
         },
         {
-            id: 11,
-            thumbnail: AdiQat,
-            width: 56,
-            height: 40,
+            id: 1,
+            thumbnail: WalMart,
+            width: 134,
+            height: 32,
+        },
+
+        {
+            id: 2,
+            thumbnail: Trafilea,
+            width: 137,
+            height: 32,
         },
         {
-            id: 12,
-            thumbnail: Cisco,
-            width: 60,
+            id: 3,
+            thumbnail: YallaMotor,
+            width: 152,
+            height: 32,
+        },
+        {
+            id: 4,
+            thumbnail: NissanMotor,
+            width: 142,
+            height: 32,
+        },
+        {
+            id: 5,
+            thumbnail: Repurpose,
+            width: 196,
+            height: 32,
+        },
+        {
+            id: 6,
+            thumbnail: WalMart,
+            width: 134,
+            height: 32,
+        },
+        {
+            id: 7,
+            thumbnail: Trafilea,
+            width: 137,
+            height: 32,
+        },
+        {
+            id: 8,
+            thumbnail: YallaMotor,
+            width: 152,
+            height: 32,
+        },
+        {
+            id: 9,
+            thumbnail: NissanMotor,
+            width: 142,
+            height: 32,
+        },
+        {
+            id: 10,
+            thumbnail: Repurpose,
+            width: 196,
             height: 32,
         },
 
@@ -119,7 +168,7 @@ export default function HeroSectin({
     return (
         <section className="py-14 bg-black">
             <div className="container">
-                <div className="relative before:content-[''] before:absolute before:top-10 before:left-20 before:w-[300px] before:h-[300px] before:from-[#202020] before:to-[#333333] before:rounded-[60%] before:blur-2xl before:-z-10"></div>
+                <div className="relative before:content-[''] before:absolute before:top-10 left-0 sm:before:left-20 before:w-[300px] before:h-[300px] before:from-[#202020] before:to-[#333333] before:rounded-[60%] before:blur-2xl before:-z-10"></div>
                 <div className="absolute hidden md:block left-32 bottom-12">
                     <img src={HeroBg} alt="beforecircle" height={435} width={429} />
                 </div>
@@ -167,13 +216,15 @@ export default function HeroSectin({
                     <p className="text-[#E7E7E7] text-sm font-medium text-center">TRUSTED BY INDUSTRY LEADERS & FAST-GROWING STARTUPS</p>
                 </div>
             </div>
-            <div className="slider max-w-full">
-                <div className="slide-track">
-                    {SLIDER_IMAGE.map(card => (
-                        <div className="slide" key={card.id}>
-                            <img src={card.thumbnail} height={card.height} width={card.width} alt="image" />
-                        </div>
-                    ))}
+            <div className="main-animate max-w-full overflow-hidden">
+                <div className="slider">
+                    <div className="slide-track ">
+                        {SLIDER_IMAGE.map((card, index) => (
+                            <div className="slide flex justify-center" key={card.id + index}>
+                                <img className="slide-img" src={card.thumbnail} height={card.height} width={card.width} alt="image" />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

@@ -22,34 +22,30 @@
       rgba(255, 255, 255, 0) 100%);
 }
 
+.main-animate {
+  padding: 20px 0
+}
+
+.main-animate .slide-track {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  animation: 10s linear infinite scroll
+}
+
+.main-animate .slide {
+  height: 32px;
+  flex-shrink: 0;
+}
+
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translate(0)
   }
 
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(-1150px)
   }
-}
-
-.slider {
-  background: black;
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-
-}
-
-.slide-track {
-  animation: scroll 20s linear infinite;
-  display: flex;
-  gap: 2px;
-  width: calc(250px * 14);
-}
-
-.slide {
-  height: 100px;
-  width: 250px;
 }
 
 .floating_btn {
@@ -101,4 +97,3 @@
   color: #707070;
   font-size: 13px;
 }
-

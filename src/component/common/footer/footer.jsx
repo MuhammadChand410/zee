@@ -152,33 +152,14 @@ export default function Footer() {
             <footer className="py-8 border-t border-[#2A2A2A] bg-[#0B0B0B]">
                 <div className="container mx-auto px-4">
                     <div className="grid gap-8">
-                        <img src={Zeeframe} alt="zeeframe" width={1241} height={181} />
-                        <div className="flex flex-col md:flex-row gap-8 sm:gap-12">
+                        <img src={Zeeframe} alt="zeeframe" className="" width={1241} height={181} />
+                        <div className="flex flex-col lg:flex-row gap-8 sm:gap-12">
                             <div className="max-w-[446px]">
                                 <p className="text-[#BDBDBD] w-full md:max-w-[393px] text-lg font-normal leading-[27px]">
                                     We transform ideas into user-centered digital experiences for businesses worldwide,
                                     from Fortune 500s to startups, using Figma, Webflow, and no-code solutions.
                                 </p>
                             </div>
-                            {/* <div className="sm:flex flex-col sm:flex-row grid sm:grid-cols-1 grid-cols-2">
-                                {FOOTER_LINKS.map((card) => (
-                                    <div key={card.title} className="max-w-[216px] w-full">
-                                        <h2 className="text-base text-white font-semibold pb-5">{card.title}</h2>
-                                        <ul className="grid gap-3.5 ">
-                                            {card.links.map((linkItem) => (
-                                                <li key={linkItem.text}>
-                                                    <Link
-                                                        to={linkItem.path}
-                                                        className="text-[#8F8F8F] text-[15px] font-normal hover:text-white transition"
-                                                    >
-                                                        {linkItem.text}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                ))}
-                            </div> */}
                             <div className="grid grid-cols-2 md:grid-cols-1 gap-8 md:flex md:flex-row  sm:gap-10">
                                 {FOOTER_LINKS.map((card) => (
                                     <div
@@ -205,9 +186,9 @@ export default function Footer() {
                             </div>
 
                         </div>
-                        <div className="px-6 py-6 bg-[#1A1A1A] w-fit md:w-full">
+                        <div className="px-6 py-6 bg-[#1A1A1A] w-fit lg:w-full">
                             <div className="px-5 py-5">
-                                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4  gap-4 ">
+                                <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-8 md:gap-4 ">
                                     {FOOTER_CARDS.map((card =>
                                         <div className="grid gap-3" key={card.id}>
                                             <img src={card.thumbnail} alt="card-image" width={34} height={24} />
@@ -221,7 +202,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-3 flex sm:flex-row flex-col gap-5 justify-between items-center">
+                        <div className="py-3 flex lg:flex-row flex-col gap-5 justify-between items-center">
                             <p className="text-xs font-normal text-white/70">© ZeeFrames (Private) Limited. All Rights Reserved.</p>
                             <div className="flex items-center gap-4">
                                 {FOOTER_ICON.map((card =>

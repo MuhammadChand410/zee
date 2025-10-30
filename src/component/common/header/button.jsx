@@ -7,21 +7,33 @@ export default function Button({ text, textt, startIcon, endIcon, className, onC
         //     {text}
         //     {endIcon && endIcon}
         // </button>
-        <button type={type} onClick={onClick} className={`flex  group relative items-center justify-center gap-3 px-5 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden ${className && className}`}>
-            <span className="transition-all duration-300 group-hover:opacity-0">
-                {startIcon && startIcon}
-                {text}
-                {endIcon && endIcon}
-            </span>
-            <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100">
-                {startIcon && startIcon}
-                {textt}
-                {endIcon && endIcon}
-            </span>
-            <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                <ButtonArrow />
-            </span>
-        </button>
+        <>
+            
+                <button type={type} onClick={onClick}
+                    className={`relative px-3 flex items-center justify-center w-[230px] group-hover:w-[120px] h-[48px] rounded-full border border-[#F3FE00]
+                                                            bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold 
+                                                            hover:bg-black hover:text-[#F3FE00] transition-all duration-500 overflow-hidden ${className && className}`}
+                >
+                    <div className="flex items-center justify-center gap-2 transition-all duration-500 group-hover:opacity-0">
+                        <span className="text-base font-semibold">
+                            {startIcon && startIcon}
+                            {text}
+                            {endIcon && endIcon}
+                        </span>
+                        <span className="w-5 h-5 flex justify-center items-center">
+                            <ButtonArrow />
+                        </span>
+                    </div>
+                    <div className="absolute px-2 inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <span>
+                            {startIcon && startIcon}
+                            {textt}
+                            {endIcon && endIcon}
+                        </span>
+                    </div>
+                </button>
+            
+        </>
     )
 }
 

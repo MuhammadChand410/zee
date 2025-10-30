@@ -1,5 +1,6 @@
 import ButtonArrow from "../../assets/icon/button-arrow";
 import { NoiseImage, NoiseStar } from "../../assets/images";
+import Button from "../../component/common/header/button";
 import HeroContant from "../../component/common/hero-contant/hero-contant";
 
 export default function NoiseEffect() {
@@ -13,24 +14,8 @@ export default function NoiseEffect() {
                         <div className="sm:py-10 py-8">
                             <HeroContant heading='Design That Thinks. Interfaces That Feel.' classNamehead='sm:!text-[70px] !text-[28px]  !leading-[42px] sm:!leading-[96px] !text-start' desc='At ZeeFrames, we craft AI-ready design systems for modern software responsive, scalable, and human-centered.' classNameDesc='sm:!text-[18px] !text-start !text-base !leading-[25px] sm:!leading-[30px]' />
                         </div>
-                        <div className="w-[198px] group">
-                            <button
-                                className="relative w-fit flex items-center justify-center gap-3 px-2 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold  hover:text-[#F3FE00] transition-all duration-500 overflow-hidden whiteSpace-nowrap hover:bg-black"
-                            >
-                                <span className="flex items-center justify-center w-[180px] group-hover:w-[90px] transition-all duration-500 ease-in-out">
-                                    <span className="absolute transition-opacity duration-300 group-hover:opacity-0">
-                                        See AI in Action
-                                    </span>
-
-                                    <span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                        Let’s Talk
-                                    </span>
-
-                                    <span className="absolute right-5 w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                                        <ButtonArrow />
-                                    </span>
-                                </span>
-                            </button>
+                        <div className="group w-[190px]">
+                            <Button text='See AI in Action' textt='Let’s Talk' className='!w-[190px] group-hover:!w-[120px]' />
                         </div>
                     </div>
                     <div>

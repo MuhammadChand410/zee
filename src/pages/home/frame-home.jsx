@@ -4,6 +4,7 @@ import ClutchIcon from "../../assets/icon/clutch-icon";
 import StarIcon from "../../assets/icon/star-icon";
 import HeroContant from "../../component/common/hero-contant/hero-contant";
 import { useState } from "react";
+import Button from "../../component/common/header/button";
 const FAQS = [
     {
         id: 1,
@@ -69,24 +70,8 @@ export default function FrameHome() {
                     <div className="">
                         <HeroContant subheading='FAQs' classNameSub='!text-start !pb-8' heading='Got Question?' classNamehead='!text-start !pb-3' desc='We begin with meaningful conversations that drive design decisions.' classNameDesc='!text-start !pb-8' />
                         <div className="flex sm:flex-row flex-col gap-8">
-                            <div className="w-[198px] group">
-                                <button
-                                    className="relative w-fit flex items-center justify-center gap-3 px-2 py-3 rounded-full border hover:border-[#F3FE00] border-[#FFF] bg-[#FFF] text-[#0D0D0D] text-base font-semibold  hover:text-[#F3FE00] transition-all duration-500 overflow-hidden whiteSpace-nowrap hover:bg-black"
-                                >
-                                    <span className="flex items-center justify-center w-[180px] group-hover:w-[90px] transition-all duration-500">
-                                        <span className="absolute transition-opacity duration-300 group-hover:opacity-0">
-                                            Book a free call
-                                        </span>
-
-                                        <span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                            Let’s Talk
-                                        </span>
-
-                                        <span className="absolute right-5 w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                                            <ButtonArrow />
-                                        </span>
-                                    </span>
-                                </button>
+                            <div className="group w-[190px]">
+                                <Button text='Book a free call' textt=' Let’s Talk' className='!w-[190px] group-hover:!w-[120px] !rounded-full !border hover:!border-[#F3FE00] !border-[#FFF] !bg-[#FFF] hover:!text-[#F3FE00] !text-[#0D0D0D] hover:!bg-black'/>
                             </div>
                             <div className="flex gap-4">
                                 <ClutchIcon />

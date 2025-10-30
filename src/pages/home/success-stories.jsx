@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { SuccessFive, SuccessFour, SuccessImage, SuccessSix, SuccessThree, SuccessTwo } from "../../assets/images";
 import HeroContant from "../../component/common/hero-contant/hero-contant";
-
-import ButtonArrow from "../../assets/icon/button-arrow";
 import Button from "../../component/common/header/button";
 
 export default function SuccessStories() {
@@ -80,38 +78,9 @@ export default function SuccessStories() {
                                 }
                             />
                             <div className="flex justify-center">
-                                {/* <button className="flex  group hover:w-[150px] hover:h-[48px] relative items-center justify-center hover:gap-0 gap-3 hover:px-0 px-5 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden">
-                                    <span className="transition-all duration-300 group-hover:opacity-0">
-                                        Book a discovery call
-                                    </span>
-                                    <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100">
-                                        Let’s Talk
-                                    </span>
-                                    <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                                        <ButtonArrow />
-                                    </span>
-                                </button> */}
-                                <div className="w-[230px] group">
-                                    <button
-                                        className="relative flex items-center justify-center gap-3 px-2 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-500 overflow-hidden"
-                                    >
-                                        <span className="flex items-center justify-center w-[230px] group-hover:w-[90px] transition-all duration-500 ease-in-out">
-                                            <span className="absolute transition-opacity duration-300 group-hover:opacity-0">
-                                                Book a discovery call
-                                            </span>
-
-                                            <span className="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                                Let’s Talk
-                                            </span>
-
-                                            <span className="absolute right-5 w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                                                <ButtonArrow />
-                                            </span>
-                                        </span>
-                                    </button>
+                                <div className='group w-[230px] flex justify-center'>
+                                    <Button text="Book a discovery call" textt='Lets Talk' className='!flex group-hover:!justify-center' />
                                 </div>
-
-                                {/* <Button text="Book a discovery call" textt='Lets Talk' className="!flex !items-center !justify-center !w-[230px] !group-hover:w-[90px] !transition-all !duration-500 !ease-in-out" /> */}
                             </div>
                         </div>
                     </div>

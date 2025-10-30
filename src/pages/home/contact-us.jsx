@@ -224,7 +224,7 @@ export default function ContactUs() {
                                             <p className="text-sm text-[#F2F2F2] font-normal">
                                                 Hate contact forms? Direct Contact.
                                             </p>
-                                            <div className="flex gap-4">
+                                            <div className="flex md:flex-row flex-col gap-4">
                                                 <Link
                                                     to="https://wa.me/14232493851"
                                                     target="_blank"

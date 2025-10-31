@@ -19,7 +19,20 @@ import InstagramIcon from "./instagram-icon";
 import FacebookIcon from "./facebook-icon";
 import TwitterIcon from "./twitter-icon";
 import HeroStarIcon from "./hero-star-icon";
-
+import ArrowBoxIcon from "./arrow-box-icon";
+import ArrowAbout from "./arrow-about";
+// import VerifiedIcon from "./verified-icon";
+import TickIcon from "./verified-icon";
+import ViewIcon from "./view-icon";
+import WebIcon from "./web-icon";
+import StarSvg from "./star-svg";
+import TeamIcon from "./team-icon";
+import ClientIcon from "./client-icon";
+import TestimotionalIcon from "./testimotional-icon";
+import GroupIcon from "./group-icon";
+import ClientsIcon from "./clients-icon";
+import UserIcon from "./user-icon";
+import SmileIcon from "./smile-icon";
 export {
     FigmaIcon,
     HeroIcon,
@@ -42,5 +55,19 @@ export {
     TwitterIcon,
     FacebookIcon,
     HeroStarIcon,
+    ArrowBoxIcon,
+    ArrowAbout,
+    // VerifiedIcon,
+    TickIcon,
+    ViewIcon,
+    WebIcon,
+    StarSvg,
+    TeamIcon,
+    ClientIcon,
+    TestimotionalIcon,
+    GroupIcon,
+    ClientsIcon,
+    UserIcon,
+    SmileIcon,
     
 }

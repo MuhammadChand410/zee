@@ -47,7 +47,16 @@ import ProcessThree  from './process-3.webp';
 import ProcessFour  from './process-4.webp';
 import ProcessFive  from './process-5.webp';
 import ProcessSix  from './process-6.webp';
-
+import BestIn  from './best-in.png';
+import BestI  from './best-i.png';
+import ImageFull  from './image-full.png';
+import WhoImage  from './who-image.png';
+import ImageLayer  from './image-layer.png';
+import ImageWho  from './image-who.png';
+import ImageOne  from './image-one.png';
+import ImageTwo  from './image-two.png';
+import ImageThree  from './image-three.png';
+import ImageFour  from './image-four.png';
 export {
    logoImage, 
    Video,
@@ -98,5 +107,14 @@ export {
    ProcessFour,
    ProcessFive,
    ProcessSix,
-   
+   BestIn,
+   BestI,
+   ImageFull,
+   WhoImage,
+   ImageLayer,
+   ImageWho,
+   ImageOne,
+   ImageTwo,
+   ImageThree,
+   ImageFour,
 }

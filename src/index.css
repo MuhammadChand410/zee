@@ -10,6 +10,15 @@
   margin: 0 auto;
 }
 
+
+  body {
+    font-family: 'Geologica', sans-serif;
+    font-family: Inter;
+
+  }
+
+
+
 @media (max-width: 575px) {
   .container {
     padding: 0 24px;

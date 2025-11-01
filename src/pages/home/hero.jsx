@@ -1,8 +1,6 @@
 import HeroIcon from "../../assets/icon/hero-icon"
 import HeroStarIcon from "../../assets/icon/hero-star-icon";
 import { AdiQat, Cisco, Figma, FigmaB, HeroBg, NissanMotor, Repurpose, Sketch, Trafilea, Vector, W, WalMart, Xd, YallaMotor } from "../../assets/images"
-
-
 import React, { useState } from "react";
 import ButtonHero from "../../component/common/header/button-hero";
 export default function HeroSectin({
@@ -210,7 +208,7 @@ export default function HeroSectin({
                     </div>
                     <div className="flex gap-5 justify-center pb-1 sm:pb-7">
                         <ButtonHero text='Schedule Call' textt={`Let's Talk`} />
-                        <ButtonHero text='© 2025 Work' textt='Open' className='!px-5 border border-white hover:border-[#F3FE00] bg-black !text-[#FFF] hover:bg-black' />
+                        <ButtonHero text='© 2025 Work' textt='Open' className='!px-3 sm:!px-5 border border-white hover:border-[#F3FE00] bg-black !text-[#FFF] hover:bg-black' />
                     </div>
 
                     <p className="text-[#E7E7E7] text-sm font-medium text-center">TRUSTED BY INDUSTRY LEADERS & FAST-GROWING STARTUPS</p>

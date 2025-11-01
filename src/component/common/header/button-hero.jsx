@@ -3,7 +3,7 @@ export default function ButtonHero({ text, textt, startIcon, endIcon, className,
         <button
             type={type}
             onClick={onClick}
-            className={`group relative flex items-center justify-center gap-3 px-8 py-3 rounded-full border border-[#FFF] bg-[#FFF] text-black text-base font-semibold hover:bg-black hover:text-[#FFF] transition-all duration-300 overflow-hidden ${className || ""}`}
+            className={`group relative flex items-center justify-center gap-3 px-4 md:px-8 py-3 rounded-full border border-[#FFF] bg-[#FFF] text-black text-base font-semibold hover:bg-black hover:text-[#FFF] transition-all duration-300 overflow-hidden ${className || ""}`}
         >
             <span className="transition-all duration-300 group-hover:opacity-0 group-hover:-translate-x-full">
                 {text}

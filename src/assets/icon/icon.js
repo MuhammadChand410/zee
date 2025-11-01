@@ -33,6 +33,9 @@ import GroupIcon from "./group-icon";
 import ClientsIcon from "./clients-icon";
 import UserIcon from "./user-icon";
 import SmileIcon from "./smile-icon";
+import AchivimentStar from "./achiviment-star";
+import AchivimentClutch from "./achivement-clutch";
+import AchivimentBlack from "./achivement-black";
 export {
     FigmaIcon,
     HeroIcon,
@@ -69,5 +72,8 @@ export {
     ClientsIcon,
     UserIcon,
     SmileIcon,
+    AchivimentStar,
+    AchivimentClutch,
+    AchivimentBlack,
     
 }

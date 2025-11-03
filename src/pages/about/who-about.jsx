@@ -34,7 +34,7 @@ export default function WhoAbout() {
                         <div className="absolute -top-21 -right-36 left-50 flex justify-center z-20">
                             <StarSvg />
                         </div>
-                        <div className="absolute -top-21 -right-18 z-10">
+                        <div className="absolute -top-21 -right-2 md:-right-18 z-10">
                             <img src={ImageLayer} alt="" width={335} height={335} />
                         </div>
                         <div className="relative z-0">

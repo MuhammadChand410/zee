@@ -31,7 +31,7 @@ export default function WhoAbout() {
             <div className="container">
                 <div className="flex lg:flex-row flex-col items-start md:items-center gap-8 lg:gap-40">
                     <div className="relative flex justify-center lg:mt-2 mt-20">
-                        <div className="absolute -top-21 -right-36 left-50 flex justify-center z-20">
+                        <div className="absolute -top-21 -right-4 md:-right-36 left-50 flex justify-center z-20">
                             <StarSvg />
                         </div>
                         <div className="absolute -top-21 -right-2 md:-right-18 z-10">

@@ -41,18 +41,16 @@ export default function AboutMission() {
                     </div>
                     <div className="flex md:flex-row flex-col justify-between">
                         <p className="text-sm font-normal text-[#FFF]">Since 2020, what we get...</p>
-                        <div className="grid sm:items-center justify-center">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-18">
-                                {MISSION_CARD.map((card =>
-                                    <div key={card.id} className="">
-                                        <card.Icon />
-                                        <div className="-mt-21 -left-23 z-0 relative">
-                                            <h2 className="text-[#F3FE00] text-[60px] font-bold">{card.title}</h2>
-                                            <p className="text-[23px] text-[#C2C2C2] font-normal">{card.desc}</p>
-                                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-18 max-w-[512px] w-full">
+                            {MISSION_CARD.map((card =>
+                                <div key={card.id} className="relative">
+                                    <span className={`absolute -top-9.5 ${card.id === 1 ? 'right-[36px]' : card.id === 2 ? 'right-[15px]' : card.id === 3 ? 'right-[13px]' : 'right-[1px]'}`}><card.Icon /></span>
+                                    <div className="relative">
+                                        <h2 className="text-[#F3FE00] text-[60px] font-bold">{card.title}</h2>
+                                        <p className="text-[23px] text-[#C2C2C2] font-normal">{card.desc}</p>
                                     </div>
-                                ))}
-                            </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

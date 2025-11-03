@@ -1,21 +1,26 @@
 import AchivementBlack from "../../assets/icon/achivement-black";
 import AchivementClutch from "../../assets/icon/achivement-clutch";
 import AchivementStar from "../../assets/icon/achiviment-star";
+import GoodFirm from "../../assets/icon/goodfirm-icon";
+import UpWork from "../../assets/icon/upwork-icon";
 
 export default function Achivements() {
     const ACHIVEMENT_STAR = [
         {
             id: 1,
+            icon:AchivementClutch,
             title: 'Reviewed on',
             titlee: '41 Reviews'
         },
         {
             id: 2,
+            icon:GoodFirm,
             title: 'Reviewed on',
             titlee: '41 Reviews'
         },
         {
             id: 3,
+            icon:UpWork,
             title: 'Reviewed on',
             titlee: '41 Reviews'
         },
@@ -27,7 +32,7 @@ export default function Achivements() {
                 <div className="grid gap-8 sm:gap-18">
                     <div className="flex md:flex-row flex-col items-center justify-center gap-8 sm:gap-18">
                         {ACHIVEMENT_STAR.map((card =>
-                            <div className="grid gap-3" key={card.id}>
+                            <div className="grid gap-3 justify-between" key={card.id}>
                                 <div className="flex items-center gap-8 sm:gap-3">
                                     <h2 className="text-base text-[#CACACA] font-normal">{card.title}</h2>
                                     <div className="flex gap-1">
@@ -39,7 +44,7 @@ export default function Achivements() {
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-8 sm:gap-3">
-                                    <AchivementClutch />
+                                    <card.icon/>
                                     <h2 className="text-base text-[#CACACA] font-normal">{card.titlee}</h2>
                                 </div>
                             </div>
@@ -47,7 +52,7 @@ export default function Achivements() {
                     </div>
                     <div className="flex justify-center">
                         <div className="px-8 py-8 bg-[#F3FE00] rounded-[12px] md:max-w-[930px] max-w-[327px]">
-                            <div className="flex md:flex-row flex-col gap-6 sm:gap-18 items-center justify-center px-2 md:px-24">
+                            <div className="flex md:flex-row flex-col gap-6 sm:gap-18 items-center justify-center px-2 md:px-30">
                                 <div className="flex gap-5 items-center">
                                     <h3 className="text-[#000] text-[40px] font-extrabold">224</h3>
                                     <p className="text-[#1F1F1F] text-base font-normal leading-[24px]">Reviews on <br /> 3 platforms</p>

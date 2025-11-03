@@ -36,6 +36,9 @@ import SmileIcon from "./smile-icon";
 import AchivimentStar from "./achiviment-star";
 import AchivimentClutch from "./achivement-clutch";
 import AchivimentBlack from "./achivement-black";
+import GoodFirm from "./goodfirm-icon";
+import UpWork from "./upwork-icon";
+import AboutStarIcon from "./about-star-icon";
 export {
     FigmaIcon,
     HeroIcon,
@@ -75,5 +78,8 @@ export {
     AchivimentStar,
     AchivimentClutch,
     AchivimentBlack,
+    GoodFirm,
+    UpWork,
+    AboutStarIcon,
     
 }

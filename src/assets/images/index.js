@@ -57,6 +57,7 @@ import ImageOne  from './image-one.png';
 import ImageTwo  from './image-two.png';
 import ImageThree  from './image-three.png';
 import ImageFour  from './image-four.png';
+import TeamImage  from './team-image.png';
 export {
    logoImage, 
    Video,
@@ -117,4 +118,6 @@ export {
    ImageTwo,
    ImageThree,
    ImageFour,
+   TeamImage,
+   
 }

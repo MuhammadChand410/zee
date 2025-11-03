@@ -45,9 +45,9 @@ export default function Achivements() {
                             </div>
                         ))}
                     </div>
-                    <div className="">
-                        <div className="px-8 py-8 bg-[#F3FE00] rounded-[12px]">
-                            <div className="flex md:flex-row flex-col gap-6 sm:gap-18 items-center justify-center">
+                    <div className="flex justify-center">
+                        <div className="px-8 py-8 bg-[#F3FE00] rounded-[12px] md:max-w-[930px] max-w-[327px]">
+                            <div className="flex md:flex-row flex-col gap-6 sm:gap-18 items-center justify-center px-2 md:px-24">
                                 <div className="flex gap-5 items-center">
                                     <h3 className="text-[#000] text-[40px] font-extrabold">224</h3>
                                     <p className="text-[#1F1F1F] text-base font-normal leading-[24px]">Reviews on <br /> 3 platforms</p>

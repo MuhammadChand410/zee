@@ -23,6 +23,26 @@ export default function WhoAreSection() {
             id: 5,
             thumbnail: ImageFour
         },
+         {
+            id: 6,
+            thumbnail: ImageOne
+        },
+        {
+            id: 7,
+            thumbnail: ImageWho
+        },
+        {
+            id: 8,
+            thumbnail: ImageTwo
+        },
+        {
+            id: 9,
+            thumbnail: ImageThree
+        },
+        {
+            id: 10,
+            thumbnail: ImageFour
+        },
     ]
     return (
         <section className="bg-black pt-8 sm:pt-20">
@@ -38,23 +58,26 @@ export default function WhoAreSection() {
                             </div>
                         ))}
                     </div> */}
-                    <div className="flex gap-2">
-                        {IMAGE_WHO.map((card) => (
-                            <div
-                                key={card.id}
-                                className="relative overflow-hidden"
-                            >
-                                <img
-                                    src={card.thumbnail}
-                                    alt="image-who"
-                                    width={282}
-                                    height={360}
-                                    loading="lazy"
-                                    className="w-[282px] h-[360px] object-cover"
-                                />
-                                <div className="absolute inset-0 bg-[#00000080]"></div>
+                    <div className="main-animate max-w-full overflow-hidden">
+                        <div className="slider">
+                            <div className="slide-trackk flex gap-2">
+                                {IMAGE_WHO.map((card) => (
+                                    <div
+                                        key={card.id}
+                                        className="slidee relative overflow-hidden" style={{ filter: 'grayscale(100%)' }}
+                                    >
+                                        <img
+                                            src={card.thumbnail}
+                                            alt="image-who"
+                                            width={282}
+                                            height={360}
+                                            loading="lazy"
+                                            className="slide-img w-[282px] h-[360px] object-cover"
+                                        />
+                                    </div>
+                                ))}
                             </div>
-                        ))}
+                        </div>
                     </div>
 
                 </div>

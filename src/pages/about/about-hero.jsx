@@ -44,17 +44,17 @@ export default function AboutHero() {
         <section className="sm:py-20 py-8 bg-black">
             <div className="container">
                 {/* <div className="relative before:content-[''] before:absolute before:top-10 left-0 sm:before:left-20 before:w-[300px] before:h-[300px] before:from-[#202020] before:to-[#333333] before:rounded-[60%] before:blur-2xl before:-z-10"></div> */}
-                <div className="absolute hidden md:block left-72 bottom-68">
+                <div className="absolute hidden md:block left-57 bottom-68">
                     <AboutStarIcon />
                 </div>
                 <div className="grid gap-8 sm:gap-16">
                     <div className="grid gap-7">
                         <div className="grid justify-center">
-                            <div className="grid gap-3 max-w-[900px]">
+                            <div className="grid gap-3 max-w-[880px]">
                                 <div className="flex justify-center items-center">
-                                    <h1 className="relative font-[Geologica] max-w-[731px] sm:text-7xl text-4xl font-extrabold leading-[50px] sm:leading-[92px] text-white text-center">ELITE DESIGN PARTNERS</h1>
+                                    <h1 className="relative font-[Geologica] sm:text-7xl text-4xl font-extrabold leading-[50px] sm:leading-[92px] text-white text-center">ELITE DESIGN PARTNERS</h1>
                                 </div>
-                                <p className="sm:text-xl text-base text-white max-w-[774px] font-normal text-center">We are the best product design agency for startups. We excel in UI/UX design, branding, web development & committed to 100% satisfaction with every project.</p>
+                                <p className="sm:text-xl text-base text-white font-normal text-center">We Are The Best Product Design Agency For Startups. We Excel In UI/UX Design, Branding, Web Development & Committed To 100% Satisfaction With Every Project.</p>
                             </div>
                         </div>
                         <div className="flex justify-center">

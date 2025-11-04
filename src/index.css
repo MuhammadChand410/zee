@@ -46,6 +46,16 @@
   height: 32px;
   flex-shrink: 0;
 }
+.main-animate .slidee {
+  height: 360px;
+  flex-shrink: 0;
+}
+.main-animate .slide-trackk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: 24s linear infinite scroll
+}
 
 @keyframes scroll {
   0% {

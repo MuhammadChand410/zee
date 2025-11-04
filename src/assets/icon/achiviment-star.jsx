@@ -1,7 +1,13 @@
-export default function AchivementStar() {
+export default function AchivementStar({ color = "#FFD700", size = 16 }) {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
-            <path d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z" fill="#FF3D2E" />
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill={color}
+            viewBox="0 0 24 24"
+            width={size}
+            height={size}
+        >
+            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.896 1.48 8.298L12 18.897l-7.416 4.603 1.48-8.298L0 9.306l8.332-1.151z" />
         </svg>
-    )
+    );
 }

@@ -31,8 +31,12 @@ export default function OurMission() {
         <section className="sm:py-20 py-8 bg-black">
             <div className="container">
                 <div className="grid sm:gap-20 gap-8">
-                    <div>
+                    {/* <div>
                         <HeroContant subheading={`our value`} classNameSub={`!pb-2 !text-start`} desc={`Together, we make perfect partners. We offer worry-free partnerships and deliver your vision into reality with our top-tier creativity. No fluff, just the good stuff.`} classNameDesc={`!text-start !text-[28px] !leading-[46px] sm:!leading-[40px] sm:!text-[24px]`} />
+                    </div> */}
+                    <div className="grid gap-4 sm:gap-6 max-w-[980px]">
+                        <h2 className="text-[#F3FE00] text-sm font-normal">our value</h2>
+                        <p className="sm:text-[32px] text-[#FFF] text-[28px] font-[Geologica] leading-[42px] font-light sm:leading-[46px] ">Together, we make perfect partners. We offer worry-free partnerships and deliver your vis<span className="text-[#A3A3A3]">ion into reality with our top-tier creativity. No fluff, just the good stuff.</span></p>
                     </div>
                     <div className="grid gap-4 sm:gap-0">
                         {OUR_VALUES.map((card =>

@@ -57,7 +57,7 @@ export default function WhoAbout() {
                                     <card.icon />
                                     <div className="grid gap-2">
                                         <h2 className="text-base font-normal text-[#FFF]">{card.title}</h2>
-                                        <p className="text-sm font-normal text-[#DEDEDE] leading-[21px]">{card.desc}</p>
+                                        <p className="text-sm font-normal text-[#DEDEDE] font-[Plus Jakarta Sans] leading-[21px]">{card.desc}</p>
                                     </div>
                                 </div>
                             ))}

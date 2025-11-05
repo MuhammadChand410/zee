@@ -6,7 +6,7 @@
 
 .container {
   max-width: 1380px;
-  padding: 0 60px;
+  padding: 0 80px;
   margin: 0 auto;
 }
 
@@ -54,6 +54,17 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  animation: 24s linear infinite scroll
+}
+.main-animate .slideee {
+  width: 381px;
+  height: 479px;
+  flex-shrink: 0;
+}
+.main-animate .slide-trackkk {
+  display: flex;
+  align-items: center;
+  gap: 48px;
   animation: 24s linear infinite scroll
 }
 

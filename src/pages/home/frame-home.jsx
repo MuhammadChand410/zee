@@ -83,7 +83,7 @@ export default function FrameHome() {
                                             </div>
                                         ))}
                                     </div>
-                                    <p className="text-[#D3D3D3] text-sm font-normal">Rating 5,20 reviews</p>
+                                    <p className="text-[#D3D3D3] text-sm font-normal w-[130px]">Rating 5,20 reviews</p>
                                 </div>
                             </div>
                         </div>

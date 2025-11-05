@@ -13,11 +13,11 @@ const FOOTER_LINKS = [
         links: [
             {
                 text: 'Home',
-                path: '/home'
+                path: '/'
             },
             {
                 text: 'About',
-                path: '/about'
+                path: '/about-us'
             },
             {
                 text: 'Services',

@@ -6,7 +6,7 @@ export default function OurTeam() {
         <div className={className}>
             <img
                 src={image}
-                className="w-full pb-4"
+                className="w-full pb-4 object-cover"
                 alt="team-member"
                 width={310}
                 height={360}
@@ -153,25 +153,25 @@ export default function OurTeam() {
 
                     <div className="flex md:flex-row flex-col justify-between gap-6 md:gap-8">
                         <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="pl-[0px] md:pl-[290px]" />
-                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="pl-[0px] md:pl-[290px] mt-[0px] md:mt-[120px]" />
+                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="pl-[0px] md:pl-[290px] mt-[0px] md:mt-[100px]" />
                     </div>
 
 
                     <div className="flex md:flex-row flex-col gap-6 md:gap-8">
                         <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" />
-                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="pl-[0px] md:pl-[290px] mt-[0px] md:mt-[120px]" />
+                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="pl-[0px] md:pl-[220px] mt-[0px] md:mt-[100px]" />
                     </div>
 
 
                     <div className="flex md:flex-row flex-col gap-6 md:gap-8">
-                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="pl-[0px] md:pl-[260px]" />
-                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="pl-[0px] md:pl-[290px] mt-[0px] md:mt-[120px]" />
+                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="pl-[0px] md:pl-[105px]" />
+                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="pl-[0px] md:pl-[320px] mt-[0px] md:mt-[100px]" />
                     </div>
 
 
                     <div className="flex md:flex-row flex-col justify-between gap-6 md:gap-8">
                         <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" />
-                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="mt-[0px] md:mt-[250px]" />
+                        <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="mt-[0px] pr-[0px] md:pr-[110px] md:mt-[300px]" />
                         <TeamMember image={TeamImage} name="Muhammad Baber" role="Design Director" className="mt-[0px] md:mt-[100px]" />
                     </div>
 

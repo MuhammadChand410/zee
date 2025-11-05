@@ -39,6 +39,7 @@ import AchivimentBlack from "./achivement-black";
 import GoodFirm from "./goodfirm-icon";
 import UpWork from "./upwork-icon";
 import AboutStarIcon from "./about-star-icon";
+import SearchIcon from "./search-icon";
 export {
     FigmaIcon,
     HeroIcon,
@@ -81,5 +82,6 @@ export {
     GoodFirm,
     UpWork,
     AboutStarIcon,
+    SearchIcon,
     
 }

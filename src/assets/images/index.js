@@ -58,6 +58,10 @@ import ImageTwo  from './image-two.png';
 import ImageThree  from './image-three.png';
 import ImageFour  from './image-four.png';
 import TeamImage  from './team-image.png';
+import LargeImage  from './large-blog.png';
+import BlogImage  from './large-image.png';
+import ScrollingImage  from './scrolling-image.png';
+import MainContainerImage  from './main-container.png';
 export {
    logoImage, 
    Video,
@@ -119,5 +123,9 @@ export {
    ImageThree,
    ImageFour,
    TeamImage,
+   LargeImage,
+   BlogImage,
+   ScrollingImage,
+   MainContainerImage,
    
 }

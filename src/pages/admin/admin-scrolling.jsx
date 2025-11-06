@@ -4,7 +4,6 @@ import DotIcon from "../../assets/icon/dot-icon";
 import HeroContant from "../../component/common/hero-contant/hero-contant";
 import SliderArrow from "../../assets/icon/slider-arrowj";
 import SliderLeft from "../../assets/icon/slider-arrow-left";
-import { Link } from "react-router-dom";
 
 const HORIZONTAL_SCROLLING = [
     {
@@ -42,7 +41,7 @@ const HORIZONTAL_SCROLLING = [
 
 ];
 
-export default function HorizontalScrolling() {
+export default function AdminScrolling() {
     const scrollRef = useRef(null);
 
     const scroll = (direction) => {
@@ -59,31 +58,31 @@ export default function HorizontalScrolling() {
         <section className="md:py-20 py-8 bg-black relative">
             <div className="container">
                 <div className="grid gap-8 md:gap-4 relative">
-                    <div className="flex md:flex-row flex-col md:gap-5 gap-4 justify-between md:items-center items-start">
+                    <div className="flex md:flex-row md:gap-5 gap-4 flex-col justify-between items-start md:items-center">
                         <HeroContant
                             subheading="Latest insights"
                             classNameSub="!pb-3 !text-start"
                             heading="Our Recent Articles"
                             classNamehead="!text-start"
                         />
-                    <div className="flex w-fit gap-3">
-                        <button
-                            onClick={() => scroll("left")}
-                            className="px-5 py-2.5 rounded-full bg-white/30 hover:bg-[#F3FE00] transition"
-                        >
-                            <SliderLeft size={22} className="" />
-                        </button>
-                        <button
-                            onClick={() => scroll("right")}
-                            className="px-5 py-2.5 rounded-full bg-white/30 hover:bg-[#F3FE00] transition"
-                        >
-                            <SliderArrow size={22} className="" />
-                        </button>
-                    </div>
+                        <div className="flex w-fit gap-3 ">
+                            <button
+                                onClick={() => scroll("left")}
+                                className="px-5 py-2.5 rounded-full bg-white/30 hover:bg-[#F3FE00] transition"
+                            >
+                                <SliderLeft size={22} className="" />
+                            </button>
+                            <button
+                                onClick={() => scroll("right")}
+                                className="px-5 py-2.5 rounded-full bg-white/30 hover:bg-[#F3FE00] transition"
+                            >
+                                <SliderArrow size={22} className="" />
+                            </button>
+                        </div>
                     </div>
 
 
-                    <Link to='/dashboard'
+                    <div
                         ref={scrollRef}
                         className="flex gap-8 overflow-x-auto scroll-smooth no-scrollbar pb-2"
                     >
@@ -128,7 +127,7 @@ export default function HorizontalScrolling() {
                                 </div>
                             </div>
                         ))}
-                    </Link>
+                    </div>
                 </div>
             </div>
         </section>

@@ -1,5 +1,5 @@
 import DotIcon from "../../assets/icon/dot-icon";
-import { MainContainerImage } from "../../assets/images";
+import { MainContainerImage, MainResponsiveImage } from "../../assets/images";
 import HeroContant from "../../component/common/hero-contant/hero-contant";
 
 const HORIZONTAL_SCROLLING = [
@@ -43,14 +43,6 @@ const HORIZONTAL_SCROLLING = [
         time: '7 min read',
         date: 'Jan 23, 2025',
     },
-    {
-        id: 6,
-        thumbnail: MainContainerImage,
-        title: '20+ GenAI UX patterns, examples and implementation tactics',
-        desc: 'A shared language for product teams to build usable, intelligent and safe GenAI...',
-        time: '7 min read',
-        date: 'Jan 23, 2025',
-    },
 ]
 
 const MAIN_LINKS = [
@@ -81,7 +73,7 @@ const MAIN_LINKS = [
 ]
 export default function MainContainer() {
     return (
-        <section className="bg-black md:py-25 py-8">
+        <section className="trending-blogs-section bg-black md:py-25 py-8">
             <div className="container">
                 <div className="flex md:flex-row flex-col gap-8 md:gap-25">
                     <div className="">
@@ -91,7 +83,7 @@ export default function MainContainer() {
                             </div>
                             <div className="grid gap-4">
                                 <h2 className="text-base text-[#FFF] font-medium">Blog categories</h2>
-                                <div className="w-[364px] pb-2">
+                                <div className="w-[300px] md:w-[364px] pb-2">
                                     <input
                                         type="text"
                                         placeholder="Search Any Insight"
@@ -133,7 +125,7 @@ export default function MainContainer() {
                                         className="hidden md:block md:w-fit w-full md:rounded-l-[16px] md:rounded-tr-none"
                                     />
                                     <img
-                                        src="src/assets/images/main-responsive.png"
+                                        src={MainResponsiveImage}
                                         alt="main-responsive"
                                         width={327}
                                         height={246}
@@ -142,7 +134,7 @@ export default function MainContainer() {
                                     />
 
                                     <div
-                                        className="px-5 py-6 grid items-center md:rounded-r-[16px]"
+                                        className="px-5 h-full py-6 grid items-center md:rounded-r-[16px]"
                                         style={{
                                             background: "rgba(255, 255, 255, 0.08)",
                                         }}

@@ -1,9 +1,14 @@
 import DotIcon from "../../assets/icon/dot-icon";
-import { BlogImage, LargeImage } from "../../assets/images";
+import { BlogImage, EllipseImage, LargeImage } from "../../assets/images";
+
+
 
 export default function LargeBlog() {
     return (
-        <section className="bg-black py-8 md:py-20 " >
+        <section className="bg-black py-8 md:py-20 relative" >
+            <div class="absolute z-1 left-6 bottom-0">
+                <img src={EllipseImage} alt="ellipse" width={1440} height={180} />
+            </div>
             <div className="container">
                 <div className="flex md:flex-row flex-col gap-8 md:gap-12 justify-between">
                     <img src={BlogImage} alt="blog-image" width={588} height={406} loading="lazy" />

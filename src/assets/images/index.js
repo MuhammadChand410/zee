@@ -21,7 +21,7 @@ import SuccessFour  from './success-four.png';
 import SuccessFive  from './success-five.png';
 import SuccessSix  from './success-six.png';
 import NoiseImage  from './noise-image.png';
-import NoiseStar  from './noise-star.png';
+import NoiseStar  from './noise-star.gif';
 import BlogsOne  from './blogs-one.png';
 import BlogsTwo  from './blogs-two.png';
 import BlogsThree  from './blogs-three.png';
@@ -62,6 +62,11 @@ import LargeImage  from './large-blog.png';
 import BlogImage  from './large-image.png';
 import ScrollingImage  from './scrolling-image.png';
 import MainContainerImage  from './main-container.png';
+import MainResponsiveImage  from './main-responsive.png';
+import DashboardHeroImage  from './dashboard-hero-image.png';
+import TrendingBlogImage  from './trending-blog-image.png';
+import AdminFrameImage  from './admin-frame-image.png';
+import EllipseImage  from './elipse.png';
 export {
    logoImage, 
    Video,
@@ -127,5 +132,10 @@ export {
    BlogImage,
    ScrollingImage,
    MainContainerImage,
-   
+   MainResponsiveImage,
+   DashboardHeroImage,
+   TrendingBlogImage,
+   AdminFrameImage,
+   EllipseImage,
+
 }

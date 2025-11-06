@@ -40,6 +40,10 @@ import GoodFirm from "./goodfirm-icon";
 import UpWork from "./upwork-icon";
 import AboutStarIcon from "./about-star-icon";
 import SearchIcon from "./search-icon";
+import ShareIcon from "./share-icon";
+import DashboardDot from "./dashbord-dot";
+import SliderArrow from "./slider-arrowj";
+import SliderLeft from "./slider-arrow-left";
 export {
     FigmaIcon,
     HeroIcon,
@@ -83,5 +87,9 @@ export {
     UpWork,
     AboutStarIcon,
     SearchIcon,
+    ShareIcon,
+    DashboardDot,
+    SliderArrow,
+    SliderLeft,
     
 }

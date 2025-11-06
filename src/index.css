@@ -56,9 +56,9 @@
   gap: 8px;
   animation: 24s linear infinite scroll
 }
-.main-animate .slideee {
+/* .main-animate .slideee {
   width: 381px;
-  height: 479px;
+  
   flex-shrink: 0;
 }
 .main-animate .slide-trackkk {
@@ -66,7 +66,15 @@
   align-items: center;
   gap: 48px;
   animation: 24s linear infinite scroll
+} */
+ .no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+ 
 
 @keyframes scroll {
   0% {
@@ -126,4 +134,13 @@
   margin-top: 8px;
   color: #707070;
   font-size: 13px;
+}
+
+.trending-blogs-section {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-image: url(assets/images/trending-sec-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }

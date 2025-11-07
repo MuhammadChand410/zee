@@ -48,8 +48,8 @@ export default function SuccessStories() {
                 <div className="grid gap-6 sm:gap-15">
                     <div className="flex justify-center">
                         <div className="max-w-[596px]">
-                            <HeroContant subheading='how we helped others succeed' heading='Our Creative Showcase' desc='We have become experts in creating top-notch digital products. We design beautifully and
-                             develop excellently. And we care deeply about what we do.'/>
+                            <HeroContant subheading='HOW WE HELPED OTHERS SUCCEED' heading='Our Creative Showcase' classNamehead={`!leading-[40px]`} desc='We have become experts in creating top-notch digital products. We design beautifully and
+                             develop excellently. And we care deeply about what we do.' classNameDesc={`md:!leading-normal !leading-[21px]`}/>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
@@ -58,8 +58,8 @@ export default function SuccessStories() {
                                 <div className="grid gap-10">
                                     <img src={card.thumbnail} alt="success-image" width={600} height={685} loading="lazy" />
                                     <div className="grid gap-2 sm:gap-2.5">
-                                        <h2 className="sm:text-[28px] text-[24px] font-semibold text-white">{card.title}</h2>
-                                        <p className="text-base font-normal text-[#FFF]">{card.desc}</p>
+                                        <h2 className="sm:text-[28px] text-[24px] font-[Inter Tight] font-semibold text-white">{card.title}</h2>
+                                        <p className="text-base font-normal text-[#FFF] font-[Inter Tight]">{card.desc}</p>
                                     </div>
                                 </div>
                             </div>

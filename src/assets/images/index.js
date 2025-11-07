@@ -67,6 +67,12 @@ import DashboardHeroImage  from './dashboard-hero-image.png';
 import TrendingBlogImage  from './trending-blog-image.png';
 import AdminFrameImage  from './admin-frame-image.png';
 import EllipseImage  from './elipse.png';
+import ConvatImage  from './convart-image.png';
+import FankeeImage  from './fankee-image.png';
+import ArriveImage  from './arrive-image.png';
+import LeadImage  from './lead-image.png';
+import OlventImage  from './olvant-image.png';
+import ZuusImage  from './zuus-image.png';
 export {
    logoImage, 
    Video,
@@ -137,5 +143,10 @@ export {
    TrendingBlogImage,
    AdminFrameImage,
    EllipseImage,
-
+   ZuusImage,
+   ArriveImage,
+   LeadImage,
+   FankeeImage,
+   ConvatImage,
+   OlventImage,
 }

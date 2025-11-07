@@ -48,7 +48,7 @@ export default function AdminFrame() {
     return (
         <section className="md:py-20 py-8 bg-black">
             <div className="container">
-                <div className="flex md:flex-row flex-col gap-8 md:gap-10">
+                <div className="grid [grid-template-columns:minmax(100px,900px)_minmax(100px,341px)] gap-x-[40px] gap-y-[32px]">
                     <div className="max-w-[820px] grid gap-10">
                         <div className=" flex flex-col gap-2">
                             <h2 className="text-lg text-[#ECECEC] font-medium">Let me paint you a picture of Junior Me....</h2>

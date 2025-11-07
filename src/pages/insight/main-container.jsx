@@ -149,7 +149,7 @@ export default function MainContainer() {
                                     />
 
                                     <div
-                                        className="px-5 py-6 grid items-center w-[345px] h-[218px] md:rounded-r-[16px]"
+                                        className="px-5 py-6 grid items-center max-w-full h-[218px] md:rounded-r-[16px]"
                                         style={{
                                             background: "rgba(255, 255, 255, 0.08)",
                                         }}

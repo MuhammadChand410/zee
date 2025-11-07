@@ -73,6 +73,7 @@ import ArriveImage  from './arrive-image.png';
 import LeadImage  from './lead-image.png';
 import OlventImage  from './olvant-image.png';
 import ZuusImage  from './zuus-image.png';
+import ImpactImage  from './impact-image.png';
 export {
    logoImage, 
    Video,
@@ -149,4 +150,6 @@ export {
    FankeeImage,
    ConvatImage,
    OlventImage,
+   ImpactImage,
+   
 }

@@ -4,7 +4,7 @@ export default function InsightHero() {
     return (
         <section className="sm:py-20 py-8 bg-black">
             <div className="container">
-                <div className="absolute hidden md:block left-65 bottom-68">
+                <div className="absolute hidden md:block left-49 bottom-52">
                     <AboutStarIcon />
                 </div>
                 <div className="grid gap-8">

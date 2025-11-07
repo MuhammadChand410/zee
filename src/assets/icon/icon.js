@@ -44,6 +44,7 @@ import ShareIcon from "./share-icon";
 import DashboardDot from "./dashbord-dot";
 import SliderArrow from "./slider-arrowj";
 import SliderLeft from "./slider-arrow-left";
+import ImpactImage from "./impact-icon";
 export {
     FigmaIcon,
     HeroIcon,
@@ -91,5 +92,6 @@ export {
     DashboardDot,
     SliderArrow,
     SliderLeft,
+    ImpactImage,
     
 }

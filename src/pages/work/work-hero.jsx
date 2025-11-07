@@ -1,12 +1,11 @@
 import AboutStarIcon from "../../assets/icon/about-star-icon";
-import SearchIcon from "../../assets/icon/search-icon";
 import ButtonHero from "../../component/common/header/button-hero";
 
 export default function WorkHero() {
     return (
         <section className="sm:py-20 py-8 bg-[#090909]">
             <div className="container">
-                <div className="absolute hidden md:block left-65 bottom-68">
+                <div className="absolute hidden md:block left-47 bottom-52">
                     <AboutStarIcon />
                 </div>
                 <div className="grid gap-8">

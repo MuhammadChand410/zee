@@ -8,6 +8,7 @@ import Insights from "../pages/insight";
 import ScrollToTop from "./scroll-to-top";
 import Admain from "../pages/admin";
 import AdmainPage from "../pages/admin";
+import Product from "../pages/product";
 
 export default function MyRoutes() {
     return (
@@ -22,6 +23,7 @@ export default function MyRoutes() {
                         <Route path="/work" element={<Work />} />
                         <Route path="/insights" element={<Insights />} />
                         <Route path="/dashboard" element={<AdmainPage />} />
+                        <Route path="/product" element={<Product/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>

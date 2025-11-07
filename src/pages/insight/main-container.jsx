@@ -109,6 +109,21 @@ export default function MainContainer() {
                     <div>
                         <div className="grid gap-15 max-w-[785px] min-h-[218px]">
                             {HORIZONTAL_SCROLLING.map((card) => (
+                                // <div
+                                //     key={card.id}
+                                //     className="flex md:flex-row flex-col justify-between items-center rounded-[16px] overflow-hidden"
+                                //     style={{
+                                //         border: "1px solid rgba(255, 255, 255, 0.20)",
+                                //     }}
+                                // >
+                                //     <img
+                                //         src={card.thumbnail}
+                                //         alt="scrolling-image"
+                                //         width={302}
+                                //         height={218}
+                                //         loading="lazy"
+                                //         className="hidden object-cover md:block md:w-fit w-full md:rounded-l-[16px] md:rounded-tr-none"
+                                //     />
                                 <div
                                     key={card.id}
                                     className="flex md:flex-row flex-col justify-between items-center rounded-[16px] overflow-hidden"
@@ -119,11 +134,11 @@ export default function MainContainer() {
                                     <img
                                         src={card.thumbnail}
                                         alt="scrolling-image"
-                                        width={302}
-                                        height={218}
                                         loading="lazy"
-                                        className="hidden object-cover md:block md:w-fit w-full md:rounded-l-[16px] md:rounded-tr-none"
+                                        className="hidden md:block w-full h-full object-cover md:max-w-[302px] md:h-[218px] rounded-l-[16px] md:rounded-tr-none"
                                     />
+
+
                                     <img
                                         src={MainResponsiveImage}
                                         alt="main-responsive"
@@ -158,7 +173,7 @@ export default function MainContainer() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

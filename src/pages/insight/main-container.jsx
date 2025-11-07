@@ -78,7 +78,7 @@ export default function MainContainer() {
                 <div className="flex md:flex-row flex-col gap-8 md:gap-25">
                     <div className="">
                         <div className="sticky top-25 left-0 flex md:flex-col flex-col md:gap-12 gap-4">
-                            <div className="max-w-[600px]">
+                            <div className="max-w-[510px]">
                                 <HeroContant subheading={`Popular insights`} classNameSub={`md:!pb-6 !pb-4  !text-start`} heading={`Trending Articles You Need To Read`} classNamehead={`!pb-3 !text-start md:!leading-[44px] !leading-[40px]`} desc={`Stay Ahead of the Curve and Dive Deep into the Must-Read Trending Articles that Keep You Informed and Inspired`} classNameDesc={`!text-start`} />
                             </div>
                             <div className="grid gap-4">
@@ -107,11 +107,11 @@ export default function MainContainer() {
                         </div>
                     </div>
                     <div>
-                        <div className="grid gap-15 ">
+                        <div className="grid gap-15 max-w-[785px] min-h-[218px]">
                             {HORIZONTAL_SCROLLING.map((card) => (
                                 <div
                                     key={card.id}
-                                    className="flex md:flex-row flex-col justify-between rounded-[16px] overflow-hidden"
+                                    className="flex md:flex-row flex-col justify-between items-center rounded-[16px] overflow-hidden"
                                     style={{
                                         border: "1px solid rgba(255, 255, 255, 0.20)",
                                     }}
@@ -122,7 +122,7 @@ export default function MainContainer() {
                                         width={302}
                                         height={218}
                                         loading="lazy"
-                                        className="hidden md:block md:w-fit w-full md:rounded-l-[16px] md:rounded-tr-none"
+                                        className="hidden object-cover md:block md:w-fit w-full md:rounded-l-[16px] md:rounded-tr-none"
                                     />
                                     <img
                                         src={MainResponsiveImage}

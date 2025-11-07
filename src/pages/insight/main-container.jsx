@@ -126,7 +126,7 @@ export default function MainContainer() {
                                 //     />
                                 <div
                                     key={card.id}
-                                    className="flex md:flex-row flex-col justify-between items-center rounded-[16px] overflow-hidden"
+                                    className="flex md:flex-row flex-col justify-between  rounded-[16px] overflow-hidden"
                                     style={{
                                         border: "1px solid rgba(255, 255, 255, 0.20)",
                                     }}
@@ -149,15 +149,15 @@ export default function MainContainer() {
                                     />
 
                                     <div
-                                        className="px-5 py-6 grid items-center max-w-full h-[218px] md:rounded-r-[16px]"
+                                        className="px-5 py-5 grid items-center max-w-full h-[218px] md:rounded-r-[16px]"
                                         style={{
                                             background: "rgba(255, 255, 255, 0.08)",
                                         }}
                                     >
-                                        <h3 className="text-[20px] font-[Geologica] text-[#FFF] font-semibold pb-3">
+                                        <h3 className="text-[20px] font-[Geologica] text-[#FFF] font-semibold pb-2">
                                             {card.title}
                                         </h3>
-                                        <p className="md:text-sm text-base font-normal text-[#FFF] leading-[25px] md:pb-6 pb-4">
+                                        <p className="md:text-sm text-base font-normal text-[#FFF] leading-[25px] md:pb-4 pb-2">
                                             {card.desc}
                                         </p>
                                         <div className="flex gap-2 items-center">

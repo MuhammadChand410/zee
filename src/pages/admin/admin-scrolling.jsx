@@ -60,7 +60,7 @@ export default function AdminScrolling() {
                 <div className="grid gap-8 md:gap-4 relative">
                     <div className="flex md:flex-row md:gap-5 gap-4 flex-col justify-between items-start md:items-center">
                         <HeroContant
-                            subheading="Latest insights"
+                            subheading="LATEST INSIGHTS"
                             classNameSub="!pb-3 !text-start"
                             heading="Our Recent Articles"
                             classNamehead="!text-start"

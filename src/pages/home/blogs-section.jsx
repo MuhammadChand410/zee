@@ -40,7 +40,7 @@ export default function BlogsSection() {
                     <div className="flex sm:flex-row flex-col  justify-between">
                         <div className="grid sm:items-center justify-center">
                             <div className="max-w-[410px]">
-                                <HeroContant subheading='Our Insights' classNameSub='sm:!text-start !text-center !pb-4 sm:!pb-8' heading='Insights That Inspire Vision Forward' classNamehead='sm:!text-start !text-center sm:!leading-[44px] !leading-[40px]' />
+                                <HeroContant subheading='OUR INSIGHTS' classNameSub='sm:!text-start !text-center !pb-4 sm:!pb-8' heading='Insights That Inspire Vision Forward' classNamehead='sm:!text-start !text-center sm:!leading-[44px] !leading-[40px]' />
                             </div>
                         </div>
                         <div className="grid sm:items-center justify-center">

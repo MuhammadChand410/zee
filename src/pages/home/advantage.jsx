@@ -164,10 +164,10 @@ export default function Advantage() {
                 <div className="grid sm:gap-16 gap-8">
                     <div className="flex justify-center">
                         <HeroContant
-                            subheading="Our process, Your Advantage"
+                            subheading="OUR PROCESS, YOUR ADVANTAGE"
                             classNameSub="!pb-4"
                             heading="From Idea To Execution"
-                            classNamehead="!pb-4"
+                            classNamehead="!pb-4 !leading-[40px]"
                             desc="We have become experts in creating top-notch digital products. We design beautifully and develop excellently. And we care deeply about what we do."
                             classNameDesc="!max-w-[596px]"
                         />

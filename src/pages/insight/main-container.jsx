@@ -79,7 +79,7 @@ export default function MainContainer() {
                     <div className="">
                         <div className="sticky top-25 left-0 flex md:flex-col flex-col md:gap-12 gap-4">
                             <div className="max-w-[510px]">
-                                <HeroContant subheading={`Popular insights`} classNameSub={`md:!pb-6 !pb-4  !text-start`} heading={`Trending Articles You Need To Read`} classNamehead={`!pb-3 !text-start md:!leading-[44px] !leading-[40px]`} desc={`Stay Ahead of the Curve and Dive Deep into the Must-Read Trending Articles that Keep You Informed and Inspired`} classNameDesc={`!text-start`} />
+                                <HeroContant subheading={`POPULAR INSIGHTS`} classNameSub={`md:!pb-6 !pb-4  !text-start`} heading={`Trending Articles You Need To Read`} classNamehead={`!pb-3 !text-start md:!leading-[44px] !leading-[40px]`} desc={`Stay Ahead of the Curve and Dive Deep into the Must-Read Trending Articles that Keep You Informed and Inspired`} classNameDesc={`!text-start`} />
                             </div>
                             <div className="grid gap-4">
                                 <h2 className="text-base text-[#FFF] font-medium">Blog categories</h2>

@@ -74,6 +74,7 @@ import LeadImage  from './lead-image.png';
 import OlventImage  from './olvant-image.png';
 import ZuusImage  from './zuus-image.png';
 import ImpactImage  from './impact-image.png';
+import WhooImage  from './whoo-image.png';
 export {
    logoImage, 
    Video,
@@ -151,5 +152,6 @@ export {
    ConvatImage,
    OlventImage,
    ImpactImage,
+   WhooImage,
    
 }

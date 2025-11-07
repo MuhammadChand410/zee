@@ -49,7 +49,7 @@ export default function WhoAreSection() {
             <div className="">
                 <div className="grid gap-8 sm:gap-16">
                     <div className="flex justify-center">
-                        <HeroContant subheading={`our culture`} classNameSub={`!pb-4`} heading={`Behind The Scenes`} classNamehead={`!pb-4`} desc={`We believe in clear communication, proactive problem solving, and full transparency..`} />
+                        <HeroContant subheading={`OUR CULTURE`} classNameSub={`!pb-4`} heading={`Behind The Scenes`} classNamehead={`!pb-4`} desc={`We believe in clear communication, proactive problem solving, and full transparency..`} />
                     </div>
                     {/* <div className="flex gap-2">
                         {IMAGE_WHO.map((card =>

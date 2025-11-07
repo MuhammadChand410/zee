@@ -61,7 +61,7 @@ export default function HorizontalScrolling() {
                 <div className="grid gap-8 md:gap-4 relative">
                     <div className="flex md:flex-row flex-col md:gap-5 gap-4 justify-between md:items-center items-start">
                         <HeroContant
-                            subheading="Latest insights"
+                            subheading="LATEST INSIGHTS"
                             classNameSub="!pb-3 !text-start"
                             heading="Our Recent Articles"
                             classNamehead="!text-start"

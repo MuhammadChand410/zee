@@ -68,7 +68,7 @@ export default function FrameHome() {
             <div className="container">
                 <div className="flex sm:flex-row flex-col gap-12">
                     <div className="">
-                        <HeroContant subheading='FAQs' classNameSub='!text-start !pb-8' heading='Got Question?' classNamehead='!text-start !pb-3' desc='We begin with meaningful conversations that drive design decisions.' classNameDesc='!text-start !pb-8' />
+                        <HeroContant subheading='FAQS' classNameSub='!text-start !pb-8' heading='Got Question?' classNamehead='!text-start !pb-3' desc='We begin with meaningful conversations that drive design decisions.' classNameDesc='!text-start !pb-8' />
                         <div className="flex sm:flex-row flex-col gap-8">
                             <div className="group w-[190px]">
                                 <Button text='Book a free call' textt=' Let’s Talk' className='!w-[190px] group-hover:!w-[120px] !rounded-full !border hover:!border-[#F3FE00] !border-[#FFF] !bg-[#FFF] hover:!text-[#F3FE00] !text-[#0D0D0D] hover:!bg-black'/>

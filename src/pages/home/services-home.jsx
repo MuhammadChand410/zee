@@ -36,7 +36,7 @@ export default function ServicesSection() {
             <div className="container">
                 <div className="grid justify-center pb-8 sm:py-16">
                     <HeroContant
-                        subheading="WE are great at"
+                        subheading="WE ARE GREAT AT"
                         heading="Our Services"
                         desc="Designs with Exceptional User Experiences"
                     />

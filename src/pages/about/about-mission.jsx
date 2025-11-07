@@ -36,7 +36,7 @@ export default function AboutMission() {
             <div className="container">
                 <div className="grid sm:gap-20 gap-8">
                     <div className="grid gap-4 sm:gap-6 max-w-[980px]">
-                        <h2 className="text-[#F3FE00] text-sm font-normal">Our Mission</h2>
+                        <h2 className="text-[#F3FE00] text-sm font-normal">OUR MISSION</h2>
                         <p className="sm:text-[32px] text-[#FFF] text-[28px] font-[Geologica] leading-[42px] font-light sm:leading-[46px] ">ZeeFrames strives to be a leading UI/UX design agency known for innovative solutions that deliver exceptional user experiences and drive busi<span className="text-[#A3A3A3]">ness growth. We blend creativity and user-centered design to craft intuitive, standout products and partner with clients to achieve lasting impact.</span></p>
                     </div>
                     <div className="flex md:flex-row flex-col gap-16 justify-between">

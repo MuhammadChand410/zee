@@ -23,7 +23,7 @@ export default function OurTeam() {
             <div className="sticky pt-8 sm:pt-20 top-4 z-[-1] bg-black">
                 <div className="grid justify-center">
                     <div className="max-w-[436px] pb-8 sm:pb-20">
-                        <HeroContant subheading={`Our Team`} classNameSub={`!pb-4`} heading={`Meet the people behind the magic`} classNamehead={`sm:!leading-[54px] !leading-[40px] !pb-4`} desc={`Rest assured. Your project is in good hands.`}
+                        <HeroContant subheading={`OUR TEAM`} classNameSub={`!pb-4`} heading={`Meet the people behind the magic`} classNamehead={`sm:!leading-[54px] !leading-[40px] !pb-4`} desc={`Rest assured. Your project is in good hands.`}
                         />
                     </div>
                 </div>

@@ -94,8 +94,8 @@ export default function AdminFrame() {
                                     }}>
                                         <img src={card.thumbnail} alt="blog-image" width={104} height={104} loading="lazy" />
                                         <div className="">
-                                            <p className="pb-3 text-xs font-normal text-white">{card.sub}</p>
-                                            <h4 className="pb-3 text-sm font-medium text-white font-[Geologica]">{card.title}</h4>
+                                            <p className="pb-1 text-xs font-normal text-white">{card.sub}</p>
+                                            <h4 className="pb-1 text-sm font-medium text-white font-[Geologica]">{card.title}</h4>
                                             <div className="flex gap-2 items-center">
                                                 <time className="text-xs text-white font-normal">{card.time}</time>
                                                 <DotIcon />

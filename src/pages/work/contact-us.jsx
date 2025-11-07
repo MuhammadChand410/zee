@@ -86,7 +86,7 @@ export default function ContactUs() {
         <section className="py-8 sm:py-20 bg-[#0B0B0B]">
             <div className="container">
                 <div className="flex md:flex-row flex-col justify-between gap-8 sm:gap-16">
-                    <div className="max-w-[596px]">
+                    <div className="max-w-[616px]">
                         <div className="grid gap-8">
                             <div>
                                 <HeroContant subheading='Contact us' classNameSub='!text-start !pb-4 sm:!pb-8' heading='Lets work on what you care about!' classNamehead='!text-start sm:!leading-[40px] !leading-[28px]' desc='Got a project in mind? From a full UI/UX refresh to a brand-new digital experience, we’re ready to help. Let’s turn your vision into reality' classNameDesc='!text-start' />
@@ -123,7 +123,7 @@ export default function ContactUs() {
                             </div>
                         </div>
                     </div>
-                    <div className="max-w-[560px]">
+                    <div className="max-w-[540px]">
                         <div className="px-6 py-6 border w-full border-[#3C3C3C] rounded-[24px] shadow-sm bg-[rgba(255,255,255,0.05)]">
                             <Formik
                                 initialValues={contactFormInitialValues}

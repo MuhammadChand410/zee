@@ -34,7 +34,7 @@ export default function ImpactProduct() {
                     </div>
                     <div>
                         <div className="max-w-[640px]">
-                            <HeroContant subheading={`IMPACT`} classNameSub={`!pb-2 !text-start`} heading={`Transform Vision into Measurable Product Success`} classNamehead={`md:!leading-[48px] !leading-[40px] !text-start md:!text-[40px] !text-[28px]`} desc={`Our Product Strategy Consulting bridges the gap between design, business, and technology. We define clear goals, align user needs with business outcomes, and guide your product from concept to market success.`} classNameDesc={`!font-[Plus Jakarta Sans] !leading-[21px] !pb-4 !text-start`} />
+                            <HeroContant subheading={`IMPACT`} classNameSub={`md:!pb-8 !pb-4 !text-start`} heading={`Transform Vision into Measurable Product Success`} classNamehead={`md:!leading-[48px] !leading-[40px] !text-start md:!text-[40px] !text-[28px]`} desc={`Our Product Strategy Consulting bridges the gap between design, business, and technology. We define clear goals, align user needs with business outcomes, and guide your product from concept to market success.`} classNameDesc={`!font-[Plus Jakarta Sans] !leading-[21px] !pb-8 !text-start`} />
                             <div className="grid md:grid-cols-2 grid-cols-1 ">
                                 {IMPACT_CARD.map((card =>
                                     <div className="flex gap-3 pb-4" key={card.id}>

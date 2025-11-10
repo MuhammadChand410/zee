@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArriveImage, ConvatImage, FankeeImage, LeadImage, OlventImage, SuccessFive, SuccessFour, SuccessImage, SuccessSix, SuccessThree, SuccessTwo, ZuusImage } from "../../assets/images";
 const SUCCESS_IMAGE = [
     {
@@ -178,11 +179,11 @@ export default function IndustryWork() {
                                             <h2 className="text-sm font-normal text-[#FFFFFF]">{card.title}</h2>
                                             <div className="flex gap-2 justify-between items-center">
                                                 <p className="md:text-[22px] text-lg font-medium text-[#FFFFFF] md:leading-normal leading-[29px]">{card.desc}</p>
-                                                <div className="px-2 w-fit py-2 rounded-full border border-[#3A3A3A]">
+                                                <Link to='#' className="px-2 w-fit py-2 rounded-full border border-[#3A3A3A]">
                                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.73129 1.5C1.53238 1.5 1.34161 1.42098 1.20096 1.28033C1.06031 1.13968 0.981292 0.948912 0.981292 0.75C0.981292 0.551088 1.06031 0.360322 1.20096 0.21967C1.34161 0.0790175 1.53238 0 1.73129 0H10.7313C10.9302 0 11.121 0.0790175 11.2616 0.21967C11.4023 0.360322 11.4813 0.551088 11.4813 0.75V9.75C11.4813 9.94891 11.4023 10.1397 11.2616 10.2803C11.121 10.421 10.9302 10.5 10.7313 10.5C10.5324 10.5 10.3416 10.421 10.201 10.2803C10.0603 10.1397 9.98129 9.94891 9.98129 9.75V2.56L1.26129 11.28C1.11912 11.4125 0.93107 11.4846 0.736769 11.4812C0.542468 11.4777 0.357083 11.399 0.21967 11.2616C0.0822568 11.1242 0.00354506 10.9388 0.000116847 10.7445C-0.00331137 10.5502 0.0688116 10.3622 0.201292 10.22L8.92129 1.5H1.73129Z" fill="white" />
                                                     </svg>
-                                                </div>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ArrowIcon from "../../assets/icon/arrow-icon";
 import { HoverImage } from "../../assets/images";
 import HeroContant from "../../component/common/hero-contant/hero-contant";
@@ -68,11 +69,11 @@ export default function ServicesSection() {
                                         {card.title}
                                     </h2>
                                 </div>
-                                <div
+                                <Link to='/product'
                                     className="px-3.5 py-3.5 bg-[#2D2D2D] rounded-full w-fit border border-[#2D2D2D] transition-all duration-300 group-hover:bg-white"
                                 >
                                     <ArrowIcon />
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     ))}

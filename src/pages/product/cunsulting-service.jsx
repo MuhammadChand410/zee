@@ -64,7 +64,7 @@ export default function ConsultingService() {
                             alt="consulting-oper"
                             width={286}
                             height={120}
-                            className="absolute top-40 md:top-50 left-0 z-10"
+                            className="absolute top-40 md:top-54 left-0 z-10"
                         />
                     </div>
 

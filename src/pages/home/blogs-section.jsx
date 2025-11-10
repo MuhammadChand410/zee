@@ -37,9 +37,9 @@ export default function BlogsSection() {
         <section className="py-8 sm:py-20 bg-[#0B0B0B]">
             <div className="container">
                 <div className="grid gap-8 sm:gap-12">
-                    <div className="flex sm:flex-row flex-col  justify-between">
+                    <div className="flex sm:flex-row flex-col  justify-between items-start">
                         <div className="grid sm:items-center justify-center">
-                            <div className="max-w-[410px]">
+                            <div className="max-w-[510px]">
                                 <HeroContant subheading='OUR INSIGHTS' classNameSub='sm:!text-start !text-center !pb-4 sm:!pb-8' heading='Insights That Inspire Vision Forward' classNamehead='sm:!text-start !text-center sm:!leading-[44px] !leading-[40px]' />
                             </div>
                         </div>

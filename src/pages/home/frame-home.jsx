@@ -96,7 +96,7 @@ export default function FrameHome() {
                                               ${open === index ? "border-[#F3FE00]" : "border-[#3C3C3C]"} `}>
                                 <button
                                     onClick={() => handleClick(index)}
-                                    className={`flex items-center justify-between w-full font-bold pb-2 cursor-pointer`}>
+                                    className={`flex items-center justify-between w-full font-bold cursor-pointer`}>
                                     <span className="text-[#FFF] text-start text-base font-medium">{faq.question}</span>
                                     <div className={`px-1 py-1 rounded-[6px] transition-all duration-300 ${open === index ? "bg-yellow-300" : "bg-[#2B2A2A]"
                                         }`}>

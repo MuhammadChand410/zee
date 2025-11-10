@@ -7,6 +7,7 @@ import TickIcon from "../../assets/icon/verified-icon";
 import ViewIcon from "../../assets/icon/view-icon";
 import WebIcon from "../../assets/icon/web-icon";
 import AboutStarIcon from "../../assets/icon/about-star-icon";
+import { Link } from "react-router-dom";
 export default function AboutHero() {
     const ABOUTHERO_CARD = [
         {
@@ -105,9 +106,9 @@ export default function AboutHero() {
                                                 <card.icon />
                                             </span>
                                             <p className="text-[#CACACA] text-sm font-normal">{card.desc}</p>
-                                            <span className="px-3 py-1 border border-[#B5B5B5] rounded-full">
+                                            <Link to='#' className="px-3 py-1 border border-[#B5B5B5] rounded-full">
                                                 <ArrowAbout />
-                                            </span>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

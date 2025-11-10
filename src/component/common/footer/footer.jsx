@@ -195,7 +195,7 @@ export default function Footer() {
                                             <div className="grid gap-1.5">
                                                 <h2 className="text-xl text-white font-medium">{card.title}</h2>
                                                 <p className="text-[#8E8E8E] text-sm font-normal">{card.desc}</p>
-                                                <Link to={card.path} className="text-[#E1E1E1] text-base font-medium">{card.span}</Link>
+                                                <Link to={card.path} className="text-[#E1E1E1] text-base font-normal">{card.span}</Link>
                                             </div>
                                         </div>
                                     ))}

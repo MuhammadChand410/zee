@@ -23,17 +23,19 @@ const contactFormInitialValues = {
     message: "",
 };
 const LINKDEN_PROFILE = [
-    {
+     {
         id: 1,
         thumbnail: Ali,
         title: 'Muhammad Ali',
         desc: 'Director & Co-Founder',
+        path:'https://www.linkedin.com/in/mohammad-ali-ui-ux-consultant/'
     },
     {
         id: 2,
         thumbnail: Babar,
         title: 'Muhammad Babar',
         desc: 'Director & Co-Founder',
+        path:'https://www.linkedin.com/in/muhammadbabar-uxui/'
     },
 ]
 
@@ -98,7 +100,10 @@ export default function ContactUs() {
                                         <div className="grid gap-1.5">
                                             <div className="flex items-center gap-2">
                                                 <h2 className="text-base font-medium text-white">{card.title}</h2>
-                                                <LinkdenIcon />
+                                                <Link to={card.path} target="_blank">
+                                                    <LinkdenIcon />
+                                                </Link>
+                                               
                                             </div>
                                             <p className="text-[#BDBDBD] text-sm font-normal">{card.desc}</p>
                                         </div>

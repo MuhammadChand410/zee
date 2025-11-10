@@ -53,6 +53,7 @@ import ValidationIcon from "./validation-icon";
 import DiscoveryOne from "./discovery-one";
 import AnalysisSvg from "./analysis-svg";
 import ValidationSvg from "./validatiob-svg";
+import FaqIcon from "./faq-icon";
 export {
     FigmaIcon,
     HeroIcon,
@@ -109,5 +110,6 @@ export {
     DiscoveryOne,
     AnalysisSvg,
     ValidationSvg,
+    FaqIcon,
     
 }

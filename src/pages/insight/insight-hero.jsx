@@ -4,12 +4,13 @@ export default function InsightHero() {
     return (
         <section className="sm:py-20 py-8 bg-black">
             <div className="container">
-                <div className="absolute hidden md:block left-49 bottom-52">
-                    <AboutStarIcon />
-                </div>
+
                 <div className="grid gap-8">
                     <div className="grid justify-center">
-                        <div className="grid gap-3 max-w-[880px]">
+                        <div className="grid relative gap-3 max-w-[880px]">
+                            <div className="absolute left-[2px] bottom-8">
+                                <AboutStarIcon />
+                            </div>
                             <div className="flex justify-center items-center">
                                 <h1 className="relative font-[Geologica] sm:text-7xl text-4xl font-extrabold leading-[50px] sm:leading-[92px] text-white text-center">STAY UPDATED WITH OUR INSIGHTS</h1>
                             </div>

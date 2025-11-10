@@ -166,13 +166,7 @@ export default function HeroSectin({
     return (
         <section className="py-14 bg-black">
             <div className="container">
-                <div className="relative before:content-[''] before:absolute before:top-10 left-0 sm:before:left-20 before:w-[300px] before:h-[300px] before:from-[#202020] before:to-[#333333] before:rounded-[60%] before:blur-2xl before:-z-10"></div>
-                <div className="absolute hidden md:block left-32 bottom-12">
-                    <img src={HeroBg} alt="beforecircle" height={435} width={429} />
-                </div>
-                <div className="absolute hidden md:block left-31 bottom-10">
-                    <HeroStarIcon />
-                </div>
+
                 <div className="grid gap-7 sm:gap-10 pb-5 sm:pb-10">
                     <div className="grid justify-center">
                         <div
@@ -197,7 +191,14 @@ export default function HeroSectin({
                         </div>
                     </div>
                     <div className="grid justify-center">
-                        <div className="grid gap-2 max-w-[900px]">
+                        <div className="grid relative gap-2 max-w-[900px]">
+                            <div className="relative before:content-[''] before:absolute before:top-10 left-0 sm:before:left-20 before:w-[300px] before:h-[300px] before:from-[#202020] before:to-[#333333] before:rounded-[60%] before:blur-2xl before:-z-10"></div>
+                            <div className="absolute left-[-28px] bottom-[-56px]">
+                                <img src={HeroBg} alt="beforecircle" height={435} width={429} />
+                            </div>
+                            <div className="absolute left-[-31px] bottom-[-60px]">
+                                <HeroStarIcon />
+                            </div>
                             <div className="flex justify-center items-center">
                                 <h1 className="relative sm:text-7xl text-4xl font-extrabold leading-[50px] sm:leading-[96px] text-white text-center">CREATIVE INTELLIGENCE IN EVERY PIXEL <span className="absolute hidden md:block -right-12 top-3 bg-[#F3FE00] text-[#0B0B0B] font-bold px-2 py-1.5 rounded-lg text-sm rotate-8">
                                     NO CODE

@@ -44,13 +44,14 @@ export default function AboutHero() {
         <section className="sm:py-20 py-8 bg-black">
             <div className="container">
                 {/* <div className="relative before:content-[''] before:absolute before:top-10 left-0 sm:before:left-20 before:w-[300px] before:h-[300px] before:from-[#202020] before:to-[#333333] before:rounded-[60%] before:blur-2xl before:-z-10"></div> */}
-                <div className="absolute hidden md:block left-37 bottom-52">
-                    <AboutStarIcon />
-                </div>
+
                 <div className="grid gap-8 sm:gap-16">
                     <div className="grid gap-7">
                         <div className="grid justify-center">
-                            <div className="grid gap-3 max-w-[880px]">
+                            <div className="grid relative gap-3 max-w-[880px]">
+                                <div className="absolute left-[-26px] md:left-[-38px] bottom-13">
+                                    <AboutStarIcon />
+                                </div>
                                 <div className="flex justify-center items-center">
                                     <h1 className="relative font-[Geologica] sm:text-7xl text-4xl font-extrabold leading-[50px] sm:leading-[92px] text-white text-center">ELITE DESIGN PARTNERS</h1>
                                 </div>

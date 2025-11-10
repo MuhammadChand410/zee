@@ -5,12 +5,13 @@ export default function ProductHero() {
     return (
         <section className="sm:py-20 py-8 bg-[#0B0B0B]">
             <div className="container">
-                <div className="absolute hidden md:block left-44 bottom-53">
-                    <AboutStarIcon />
-                </div>
+
                 <div className="grid gap-8">
                     <div className="grid justify-center">
-                        <div className="grid gap-3 max-w-[757px]">
+                        <div className="grid relative gap-3 max-w-[757px]">
+                            <div className="absolute left-[-30px] md:left-[-78px] bottom-14">
+                                <AboutStarIcon />
+                            </div>
                             <div className="flex justify-center items-center">
                                 <h1 className="relative font-[Geologica] sm:text-7xl text-4xl font-extrabold leading-[50px] sm:leading-[92px] text-white text-center">PRODUCT STRATEGY CONSULTING</h1>
                             </div>

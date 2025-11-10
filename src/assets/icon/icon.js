@@ -45,6 +45,14 @@ import DashboardDot from "./dashbord-dot";
 import SliderArrow from "./slider-arrowj";
 import SliderLeft from "./slider-arrow-left";
 import ImpactImage from "./impact-icon";
+import ProcessIcon from "./process-icon";
+import SecondSvg from "./second-svg";
+import DiscoveryIcon from "./discovery-icon";
+import StrategryIcon from "./strategy-icon";
+import ValidationIcon from "./validation-icon";
+import DiscoveryOne from "./discovery-one";
+import AnalysisSvg from "./analysis-svg";
+import ValidationSvg from "./validatiob-svg";
 export {
     FigmaIcon,
     HeroIcon,
@@ -93,5 +101,13 @@ export {
     SliderArrow,
     SliderLeft,
     ImpactImage,
+    ProcessIcon,
+    SecondSvg,
+    DiscoveryIcon,
+    StrategryIcon,
+    ValidationIcon,
+    DiscoveryOne,
+    AnalysisSvg,
+    ValidationSvg,
     
 }

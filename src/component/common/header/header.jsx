@@ -37,15 +37,15 @@ export default function Header() {
         },
         {
             text: "App Development",
-            url: "/services/app-development"
+            url: "#"
         },
         {
             text: "UI/UX Design",
-            url: "/services/ui-ux"
+            url: "#"
         },
         {
             text: "AI Solutions",
-            url: "/services/ai"
+            url: "#"
         },
     ];
 

@@ -1,4 +1,5 @@
 
+import CursorGlow from "../../component/common/header/curser-glow";
 import Advantage from "./advantage";
 import BlogsSection from "./blogs-section";
 import ContactUs from "./contact-us";
@@ -13,6 +14,7 @@ import VideoSection from "./video";
 export default function Home() {
     return (
         <>
+            <CursorGlow className="relative min-h-screen bg-[#0a0a0a] text-white" />
             <HeroSectin />
             <VideoSection />
             <ServicesSection />

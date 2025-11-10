@@ -53,15 +53,6 @@ export default function ConsultingService() {
                             ))}
                         </div>
                     </div>
-                    {/* <div>
-                    <div className=" relative top-0 bottom-20 left-0 right-0 z-[10">
-                        <img src={ConsultingOper} alt="consulting-oper" width={286} height={120} />
-                    </div>
-
-                    <div>
-                        <img src={ConsultingImage} className="w-full" alt="consulting-image" width={502} height={405} loading="lazy" />
-                    </div>
-                    </div> */}
                     <div className="relative w-fit max-w-[502px]">
                         <img
                             src={ConsultingImage}

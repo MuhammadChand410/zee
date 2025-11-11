@@ -1,56 +1,70 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
 import { logoImage } from "../../../assets/images";
 import ButtonArrow from "../../../assets/icon/button-arrow";
 
+const HEADER_LINKS = [
+    {
+        text: "Home",
+        url: "/"
+    },
+    {
+        text: "About",
+        url: "/about-us"
+    },
+    {
+        text: "Services",
+        url: "/services"
+    },
+    {
+        text: "Work",
+        url: "/work"
+    },
+    {
+        text: "Insights",
+        url: "/insights"
+    },
+];
+
+const SERVICE_DROPDOWN = [
+    {
+        text: "Product Strategy",
+        url: "/product"
+    },
+    {
+        text: "App Development",
+        url: "#"
+    },
+    {
+        text: "UI/UX Design",
+        url: "#"
+    },
+    {
+        text: "AI Solutions",
+        url: "#"
+    },
+];
 export default function Header() {
+    const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+    useEffect(() => {
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+        localStorage.setItem("theme", theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(theme === "light" ? "dark" : "light");
+    };
     const [menuOpen, setMenuOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
-
-    const HEADER_LINKS = [
-        {
-            text: "Home",
-            url: "/"
-        },
-        {
-            text: "About",
-            url: "/about-us"
-        },
-        {
-            text: "Services",
-            url: "/services"
-        },
-        {
-            text: "Work",
-            url: "/work"
-        },
-        {
-            text: "Insights",
-            url: "/insights"
-        },
-    ];
-
-    const SERVICE_DROPDOWN = [
-        {
-            text: "Product Strategy",
-            url: "/product"
-        },
-        {
-            text: "App Development",
-            url: "#"
-        },
-        {
-            text: "UI/UX Design",
-            url: "#"
-        },
-        {
-            text: "AI Solutions",
-            url: "#"
-        },
-    ];
-
+ 
     return (
-        <header className="bg-black py-6 sticky top-0 left-0 z-50">
+        <header className="bg-black py-[22px] sticky top-0 left-0 z-50">
             <div className="container">
                 <nav className="flex items-center justify-between">
                     <Link to="/">
@@ -111,22 +125,48 @@ export default function Header() {
                             </li>
                         ))}
                     </ul>
-
-                    <div className="hidden md:flex justify-end">
-                        <Link
-                            to="/work"
-                            className="group relative flex items-center justify-center gap-3 px-8 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden"
+                    <div className="flex items-center gap-3">
+                        <button
+                            onClick={toggleTheme}
+                            className="w-[52px] hidden md:flex h-[32px] rounded-[16px] p-[3px] items-center justify-center bg-white transition-all duration-300  hover:text-black"
                         >
-                            <span className="transition-all duration-300 group-hover:opacity-0">
-                                Work with us
-                            </span>
-                            <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100">
-                                Let’s Talk
-                            </span>
-                            <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                                <ButtonArrow />
-                            </span>
-                        </Link>
+                            {theme === "light" ? (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    className="w-5 h-5"
+                                >
+                                    <path d="M12 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Zm9-5a1 1 0 0 1 1 1h2a1 1 0 1 1 0 2h-2a1 1 0 1 1-2 0Zm-18 0a1 1 0 0 1 1 1H2a1 1 0 1 1 0 2h2a1 1 0 1 1 0-2ZM4.22 4.22a1 1 0 0 1 1.42 0l1.42 1.42a1 1 0 1 1-1.42 1.42L4.22 5.64a1 1 0 0 1 0-1.42Zm14.14 14.14a1 1 0 0 1 1.42 0l1.42 1.42a1 1 0 1 1-1.42 1.42l-1.42-1.42a1 1 0 0 1 0-1.42ZM17.66 4.22a1 1 0 0 1 1.42 1.42l-1.42 1.42a1 1 0 1 1-1.42-1.42L17.66 4.22ZM6.34 19.78a1 1 0 0 1 1.42-1.42l1.42 1.42a1 1 0 0 1-1.42 1.42L6.34 19.78Z" />
+                                </svg>
+                            ) : (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    className="w-5 h-5"
+                                >
+                                    <path d="M21.64 13a9 9 0 0 1-9.64 8.94A9 9 0 0 1 11 2.36 7 7 0 0 0 21.64 13Z" />
+                                </svg>
+                            )}
+                        </button>
+
+                        <div className="hidden md:flex justify-end">
+                            <Link
+                                to="/work"
+                                className="group relative flex items-center justify-center gap-3 px-6 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden"
+                            >
+                                <span className="transition-all duration-300 group-hover:opacity-0">
+                                    Work with us
+                                </span>
+                                <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100">
+                                    Let’s Talk
+                                </span>
+                                <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
+                                    <ButtonArrow />
+                                </span>
+                            </Link>
+                        </div>
                     </div>
 
                     <button

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-
-
 import { ConsultingImage, ConsultingOper } from "../../assets/images";
 import FaqIcon from "../../assets/icon/faq-icon";
 const FAQS = [
@@ -28,14 +26,14 @@ export default function ConsultingService() {
     return (
         <section className="md:py-20 py-8 bg-[#0B0B0B]">
             <div className="container">
-                <div className="flex md:flex-row flex-col md:gap-12 gap-8">
+                <div className="grid grid-cols-1 md:[grid-template-columns:minmax(100px,659px)_minmax(100px,502px)] gap-8 md:gap-20">
                     <div className=" max-w-[660px]">
                         <h2 className="md:text-[40px] pb-4 text-[28px] text-[#FFFFFF] font-bold font-[Geologica] leading-[48px]">Why Are Our Product Strategy Consulting Services the Right Choice for You?</h2>
                         <div className="flex flex-col gap-4">
                             {FAQS.map((faq, index) => (
                                 <div key={faq.id} className="flex  gap-3 px-3 py-3 bg-[#121212] rounded-lg" >
                                     <FaqIcon />
-                                    <div className="pt-1.5 ">
+                                    <div className="pt-1.5">
                                         <button
                                             onClick={() => handleClick(index)}
                                             className={`pb-1 cursor-pointer`}>
@@ -64,10 +62,9 @@ export default function ConsultingService() {
                             alt="consulting-oper"
                             width={286}
                             height={120}
-                            className="absolute top-40 md:top-54 left-0 z-10"
+                            className="absolute top-40 md:top-64 left-0 z-10"
                         />
                     </div>
-
                 </div>
             </div>
         </section>

@@ -196,7 +196,7 @@ export default function HeroSectin({
                             <div className="absolute left-[-28px] bottom-[-56px]">
                                 <img src={HeroBg} alt="beforecircle" height={435} width={429} />
                             </div>
-                            <div className="absolute left-[-31px] bottom-[-60px]">
+                            <div className="absolute left-[-21px] bottom-[-30px] md:bottom-[-60px]">
                                 <HeroStarIcon />
                             </div>
                             <div className="flex justify-center items-center">

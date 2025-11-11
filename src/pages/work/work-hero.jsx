@@ -9,7 +9,7 @@ export default function WorkHero() {
                 <div className="grid gap-8">
                     <div className="grid justify-center">
                         <div className="grid relative gap-3 max-w-[717px]">
-                            <div className="left-[-55px] absolute bottom-12">
+                            <div className="left-[18px] md:left-[-55px] absolute bottom-17 md:bottom-12">
                                 <AboutStarIcon />
                             </div>
                             <div className="flex justify-center items-center">

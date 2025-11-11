@@ -9,7 +9,7 @@ export default function ProductHero() {
                 <div className="grid gap-8">
                     <div className="grid justify-center">
                         <div className="grid relative gap-3 max-w-[757px]">
-                            <div className="absolute left-[-30px] md:left-[-78px] bottom-14">
+                            <div className="absolute left-[-8px] md:left-[-78px] bottom-36 md:bottom-14">
                                 <AboutStarIcon />
                             </div>
                             <div className="flex justify-center items-center">

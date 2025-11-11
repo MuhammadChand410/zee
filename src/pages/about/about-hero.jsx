@@ -50,7 +50,7 @@ export default function AboutHero() {
                     <div className="grid gap-7">
                         <div className="grid justify-center">
                             <div className="grid relative gap-3 max-w-[880px]">
-                                <div className="absolute left-[-26px] md:left-[-38px] bottom-13">
+                                <div className="absolute left-[10px] md:left-[-38px] bottom-28 md:bottom-13">
                                     <AboutStarIcon />
                                 </div>
                                 <div className="flex justify-center items-center">

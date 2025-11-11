@@ -8,7 +8,7 @@ export default function InsightHero() {
                 <div className="grid gap-8">
                     <div className="grid justify-center">
                         <div className="grid relative gap-3 max-w-[880px]">
-                            <div className="absolute left-[2px] bottom-8">
+                            <div className="absolute left-[2px] bottom-22 md:bottom-8">
                                 <AboutStarIcon />
                             </div>
                             <div className="flex justify-center items-center">

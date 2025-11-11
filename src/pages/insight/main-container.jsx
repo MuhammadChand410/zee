@@ -85,7 +85,7 @@ export default function MainContainer() {
                                 <h2 className="text-base text-[#FFF] font-medium">Blog categories</h2>
                                 <div className="w-[300px] md:w-[364px] pb-2">
                                     <input
-                                        type="text"
+                                        type="search"
                                         placeholder="Search Any Insight"
                                         className="w-full h-14 text-sm font-normal text-[#FFF] py-2 pl-6 pr-1.5 rounded-full"
                                         style={{

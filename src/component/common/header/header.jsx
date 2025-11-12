@@ -1,52 +1,282 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
+// import { Link } from "react-router-dom";
+// import { logoImage } from "../../../assets/images";
+// import ButtonArrow from "../../../assets/icon/button-arrow";
+
+// const HEADER_LINKS = [
+//     {
+//         text: "Home",
+//         url: "/"
+//     },
+//     {
+//         text: "About",
+//         url: "/about-us"
+//     },
+//     {
+//         text: "Services",
+//         url: "/services"
+//     },
+//     {
+//         text: "Work",
+//         url: "/work"
+//     },
+//     {
+//         text: "Insights",
+//         url: "/insights"
+//     },
+// ];
+
+// const SERVICE_DROPDOWN = [
+//     {
+//         text: "Product Strategy",
+//         url: "/product"
+//     },
+//     {
+//         text: "Product Design",
+//         url: "/product-design"
+//     },
+//     {
+//         text: "UI/UX Design",
+//         url: "#"
+//     },
+//     {
+//         text: "AI Solutions",
+//         url: "#"
+//     },
+// ];
+// export default function Header() {
+//     const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+//     useEffect(() => {
+//         if (theme === "dark") {
+//             document.documentElement.classList.add("dark");
+//         } else {
+//             document.documentElement.classList.remove("dark");
+//         }
+//         localStorage.setItem("theme", theme);
+//     }, [theme]);
+
+//     const toggleTheme = () => {
+//         setTheme(theme === "light" ? "dark" : "light");
+//     };
+//     const [menuOpen, setMenuOpen] = useState(false);
+//     const [isOpen, setIsOpen] = useState(false);
+
+//     return (
+//         <header className="bg-[#0D0D0D] py-[22px] sticky top-0 left-0 z-50">
+//             <div className="container">
+//                 <nav className="flex items-center justify-between">
+//                     <Link to="/">
+//                         <img src={logoImage} alt="logo" width={179} height={36} />
+//                     </Link>
+
+//                     <ul className="hidden md:flex gap-8 relative">
+//                         {HEADER_LINKS.map((item) => (
+//                             <li key={item.text} className="relative">
+//                                 {item.text === "Services" ? (
+//                                     <div className="relative">
+//                                         <button
+//                                             onClick={() => setIsOpen((prev) => !prev)}
+//                                             className="text-white cursor-pointer text-lg font-normal hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 transition-all duration-300 flex items-center gap-1"
+//                                         >
+//                                             Services
+//                                             <svg
+//                                                 xmlns="http://www.w3.org/2000/svg"
+//                                                 fill="none"
+//                                                 viewBox="0 0 24 24"
+//                                                 strokeWidth={2}
+//                                                 stroke="currentColor"
+//                                                 className={`w-5 h-5 px-1 py-1 bg-[#464646] rounded-full transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+//                                                     }`}
+//                                             >
+//                                                 <path
+//                                                     strokeLinecap="round"
+//                                                     strokeLinejoin="round"
+//                                                     d="M19 9l-7 7-7-7"
+//                                                 />
+//                                             </svg>
+//                                         </button>
+
+//                                         {isOpen && (
+//                                             <ul className="absolute left-0 top-full mt-2 w-48 bg-[#111] border border-white/10 rounded-xl shadow-lg py-2 z-50">
+//                                                 {SERVICE_DROPDOWN.map((service) => (
+//                                                     <li key={service.text}>
+//                                                         <Link
+//                                                             to={service.url}
+//                                                             onClick={() => setIsOpen(false)}
+//                                                             className="block px-4 py-2 text-white text-sm hover:bg-[#F3FE00] hover:text-black transition-all duration-300"
+//                                                         >
+//                                                             {service.text}
+//                                                         </Link>
+//                                                     </li>
+//                                                 ))}
+//                                             </ul>
+//                                         )}
+//                                     </div>
+//                                 ) : (
+//                                     <Link
+//                                         to={item.url}
+//                                         className="text-white text-lg font-normal hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 transition-all duration-300"
+//                                     >
+//                                         {item.text}
+//                                     </Link>
+//                                 )}
+//                             </li>
+//                         ))}
+//                     </ul>
+//                     <div className="flex items-center gap-3">
+//                         <button
+//                             onClick={toggleTheme}
+//                             className="w-[52px] hidden md:flex h-[32px] rounded-[16px] p-[3px] items-center justify-center bg-white transition-all duration-300  hover:text-black"
+//                         >
+//                             {theme === "light" ? (
+//                                 <svg
+//                                     xmlns="http://www.w3.org/2000/svg"
+//                                     fill="currentColor"
+//                                     viewBox="0 0 24 24"
+//                                     className="w-5 h-5"
+//                                 >
+//                                     <path d="M12 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Zm9-5a1 1 0 0 1 1 1h2a1 1 0 1 1 0 2h-2a1 1 0 1 1-2 0Zm-18 0a1 1 0 0 1 1 1H2a1 1 0 1 1 0 2h2a1 1 0 1 1 0-2ZM4.22 4.22a1 1 0 0 1 1.42 0l1.42 1.42a1 1 0 1 1-1.42 1.42L4.22 5.64a1 1 0 0 1 0-1.42Zm14.14 14.14a1 1 0 0 1 1.42 0l1.42 1.42a1 1 0 1 1-1.42 1.42l-1.42-1.42a1 1 0 0 1 0-1.42ZM17.66 4.22a1 1 0 0 1 1.42 1.42l-1.42 1.42a1 1 0 1 1-1.42-1.42L17.66 4.22ZM6.34 19.78a1 1 0 0 1 1.42-1.42l1.42 1.42a1 1 0 0 1-1.42 1.42L6.34 19.78Z" />
+//                                 </svg>
+//                             ) : (
+//                                 <svg
+//                                     xmlns="http://www.w3.org/2000/svg"
+//                                     fill="currentColor"
+//                                     viewBox="0 0 24 24"
+//                                     className="w-5 h-5"
+//                                 >
+//                                     <path d="M21.64 13a9 9 0 0 1-9.64 8.94A9 9 0 0 1 11 2.36 7 7 0 0 0 21.64 13Z" />
+//                                 </svg>
+//                             )}
+//                         </button>
+
+//                         <div className="hidden md:flex justify-end">
+//                             <Link
+//                                 to="/work"
+//                                 className="group relative flex items-center justify-center gap-3 px-6 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden"
+//                             >
+//                                 <span className="transition-all duration-300 group-hover:opacity-0">
+//                                     Work with us
+//                                 </span>
+//                                 <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100">
+//                                     Let’s Talk
+//                                 </span>
+//                                 <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
+//                                     <ButtonArrow />
+//                                 </span>
+//                             </Link>
+//                         </div>
+//                     </div>
+
+//                     <button
+//                         onClick={() => setMenuOpen(!menuOpen)}
+//                         className="md:hidden text-white focus:outline-none"
+//                     >
+//                         {menuOpen ? (
+//                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-7 h-7">
+//                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+//                             </svg>
+//                         ) : (
+//                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-7 h-7">
+//                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+//                             </svg>
+//                         )}
+//                     </button>
+//                 </nav>
+
+//                 {menuOpen && (
+//                     <div className="md:hidden text-center mt-6 bg-black border-t border-gray-800">
+//                         <ul className="flex flex-col gap-4 py-4 px-4">
+//                             {HEADER_LINKS.map((item) => (
+//                                 <li key={item.text}>
+//                                     {item.text === "Services" ? (
+//                                         <div>
+//                                             <button
+//                                                 onClick={() => setIsOpen((prev) => !prev)}
+//                                                 className="w-full text-white text-xl font-medium hover:text-[#F3FE00] flex items-center gap-2 justify-center"
+//                                             >
+//                                                 <span >Services</span>
+//                                                 <svg
+//                                                     xmlns="http://www.w3.org/2000/svg"
+//                                                     fill="none"
+//                                                     viewBox="0 0 24 24"
+//                                                     strokeWidth={2}
+//                                                     stroke="currentColor"
+//                                                     className={`w-5 h-5 px-1 py-1 bg-[#464646] rounded-full transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+//                                                         }`}
+//                                                 >
+//                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+//                                                 </svg>
+//                                             </button>
+
+//                                             {isOpen && (
+//                                                 <ul className="mt-2 bg-[#111] border border-white/10 rounded-xl py-2">
+//                                                     {SERVICE_DROPDOWN.map((service) => (
+//                                                         <li key={service.text}>
+//                                                             <Link
+//                                                                 to={service.url}
+//                                                                 onClick={() => {
+//                                                                     setMenuOpen(false);
+//                                                                     setIsOpen(false);
+//                                                                 }}
+//                                                                 className="block px-4 py-2 text-white text-sm hover:bg-[#F3FE00] hover:text-black transition-all duration-300"
+//                                                             >
+//                                                                 {service.text}
+//                                                             </Link>
+//                                                         </li>
+//                                                     ))}
+//                                                 </ul>
+//                                             )}
+//                                         </div>
+//                                     ) : (
+//                                         <Link
+//                                             to={item.url}
+//                                             onClick={() => setMenuOpen(false)}
+//                                             className="block text-white text-xl font-medium hover:text-[#F3FE00] transition-all duration-300"
+//                                         >
+//                                             {item.text}
+//                                         </Link>
+//                                     )}
+//                                 </li>
+//                             ))}
+
+//                             <div className="mt-6 text-center">
+//                                 <Link
+//                                     to="/work"
+//                                     onClick={() => setMenuOpen(false)}
+//                                     className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300"
+//                                 >
+//                                     Work with us
+//                                     <ButtonArrow />
+//                                 </Link>
+//                             </div>
+//                         </ul>
+//                     </div>
+//                 )}
+//             </div>
+//         </header>
+//     );
+// }
+
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { logoImage } from "../../../assets/images";
 import ButtonArrow from "../../../assets/icon/button-arrow";
+import ServiceHover from "./service-hover";
 
 const HEADER_LINKS = [
-    {
-        text: "Home",
-        url: "/"
-    },
-    {
-        text: "About",
-        url: "/about-us"
-    },
-    {
-        text: "Services",
-        url: "/services"
-    },
-    {
-        text: "Work",
-        url: "/work"
-    },
-    {
-        text: "Insights",
-        url: "/insights"
-    },
+    { text: "Home", url: "/" },
+    { text: "About", url: "/about-us" },
+    { text: "Services", url: "/services" },
+    { text: "Work", url: "/work" },
+    { text: "Insights", url: "/insights" },
 ];
 
-const SERVICE_DROPDOWN = [
-    {
-        text: "Product Strategy",
-        url: "/product"
-    },
-    {
-        text: "App Development",
-        url: "#"
-    },
-    {
-        text: "UI/UX Design",
-        url: "#"
-    },
-    {
-        text: "AI Solutions",
-        url: "#"
-    },
-];
 export default function Header() {
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         if (theme === "dark") {
@@ -60,25 +290,144 @@ export default function Header() {
     const toggleTheme = () => {
         setTheme(theme === "light" ? "dark" : "light");
     };
-    const [menuOpen, setMenuOpen] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
- 
+
     return (
-        <header className="bg-black py-[22px] sticky top-0 left-0 z-50">
-            <div className="container">
-                <nav className="flex items-center justify-between">
-                    <Link to="/">
+        // <header
+        //     className="bg-[#0D0D0D] py-[22px] sticky top-0 left-0 z-[100]"
+        //     onMouseLeave={() => setIsOpen(false)}
+        // >
+        //     <div className="container">
+        //         <nav className=" flex  items-center justify-between relative">
+        //             <Link to="/">
+        //                 <img src={logoImage} alt="logo" width={179} height={36} />
+        //             </Link>
+        //             {/* <ul className="hidden md:flex gap-8">
+        //                 {HEADER_LINKS.map((item) => (
+        //                     <li key={item.text} className="relative">
+        //                         {item.text === "Services" ? (
+        //                             <div
+        //                                 className="relative"
+        //                                 onMouseEnter={() => setIsOpen(true)}
+        //                                 onMouseLeave={() => !isClicked && setIsOpen(false)}
+        //                             >
+        //                                 <button
+        //                                     className="text-white text-lg font-normal hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 flex items-center gap-1 transition-all duration-300"
+        //                                 >
+        //                                     Services
+        //                                     <svg
+        //                                         xmlns="http://www.w3.org/2000/svg"
+        //                                         fill="none"
+        //                                         viewBox="0 0 24 24"
+        //                                         strokeWidth={2}
+        //                                         stroke="currentColor"
+        //                                         className={`w-5 h-5 px-1 py-1 bg-[#464646] rounded-full transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+        //                                     >
+        //                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        //                                     </svg>
+        //                                 </button>
+
+        //                                 {isOpen && (
+        //                                     <div
+        //                                         className="absolute left-0 top-full w-full bg-[#090909] z-[90] border-t border-[#1a1a1a] animate-fadeIn"
+        //                                         onClick={() => setIsClicked(true)}
+        //                                     >
+        //                                         <ServiceHover />
+        //                                     </div>
+        //                                 )}
+        //                             </div>
+        //                         ) : (
+        //                             <Link
+        //                                 to={item.url}
+        //                                 className="text-white text-lg font-normal hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 transition-all duration-300"
+        //                             >
+        //                                 {item.text}
+        //                             </Link>
+        //                         )}
+        //                     </li>
+
+        //                 ))}
+        //             </ul> */}
+        //             <div className="flex items-center gap-3">
+        //                 <button
+        //                     onClick={toggleTheme}
+        //                     className="w-[52px] hidden md:flex h-[32px] rounded-[16px] p-[3px] items-center justify-center bg-white transition-all duration-300 hover:text-black"
+        //                 >
+        //                     {theme === "light" ? (
+        //                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5">
+        //                             <path d="M12 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Zm9-5a1 1 0 0 1 1 1h2a1 1 0 1 1 0 2h-2a1 1 0 1 1-2 0Z" />
+        //                         </svg>
+        //                     ) : (
+        //                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5">
+        //                             <path d="M21.64 13a9 9 0 0 1-9.64 8.94A9 9 0 0 1 11 2.36 7 7 0 0 0 21.64 13Z" />
+        //                         </svg>
+        //                     )}
+        //                 </button>
+
+        //                 <div className="hidden md:flex justify-end">
+        //                     <Link
+        //                         to="/work"
+        //                         className="group relative flex items-center justify-center gap-3 px-6 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden"
+        //                     >
+        //                         <span className="transition-all duration-300 group-hover:opacity-0">Work with us</span>
+        //                         <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100">
+        //                             Let’s Talk
+        //                         </span>
+        //                         <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
+        //                             <ButtonArrow />
+        //                         </span>
+        //                     </Link>
+        //                 </div>
+        //             </div>
+        //             <button
+        //                 onClick={() => setMenuOpen(!menuOpen)}
+        //                 className=" md:hidden text-white focus:outline-none"
+        //             >
+        //                 {menuOpen ? (
+        //                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-7 h-7">
+        //                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        //                     </svg>
+        //                 ) : (
+        //                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-7 h-7">
+        //                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        //                     </svg>
+        //                 )}
+        //             </button>
+        //         </nav>
+        //     </div>
+
+        //     {isOpen && (
+        //         // <div className="absolute left-0 w-full bg-[#090909] z-[90] border-t border-[#1a1a1a] animate-fadeIn">
+
+        //         <div
+        //             className="absolute left-0 top-full bg-[#090909] z-[90] border-t border-[#1a1a1a] animate-fadeIn"
+        //         >
+        //             <ServiceHover />
+        //         </div>
+
+        //     )}
+        // </header>
+
+        <header className="bg-[#0D0D0D] py-[22px] sticky top-0 left-0 z-[100]">
+            <div className="container mx-auto">
+                <nav className="flex items-center justify-between relative">
+                    {/* Logo */}
+                    <Link to="/" className="flex-shrink-0">
                         <img src={logoImage} alt="logo" width={179} height={36} />
                     </Link>
 
+                    {/* Desktop Menu */}
                     <ul className="hidden md:flex gap-8 relative">
                         {HEADER_LINKS.map((item) => (
                             <li key={item.text} className="relative">
                                 {item.text === "Services" ? (
-                                    <div className="relative">
+                                    <div
+                                        className="relative"
+                                        onMouseEnter={() => window.innerWidth >= 768 && setIsOpen(true)}
+                                        onMouseLeave={() => window.innerWidth >= 768 && setIsOpen(false)}
+                                    >
                                         <button
-                                            onClick={() => setIsOpen((prev) => !prev)}
-                                            className="text-white cursor-pointer text-lg font-normal hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 transition-all duration-300 flex items-center gap-1"
+                                            onClick={() => window.innerWidth < 768 && setIsOpen((prev) => !prev)}
+                                            className="text-white text-lg font-normal hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 flex items-center gap-1 transition-all duration-300"
                                         >
                                             Services
                                             <svg
@@ -87,31 +436,17 @@ export default function Header() {
                                                 viewBox="0 0 24 24"
                                                 strokeWidth={2}
                                                 stroke="currentColor"
-                                                className={`w-5 h-5 px-1 py-1 bg-[#464646] rounded-full transition-transform duration-300 ${isOpen ? "rotate-180" : ""
-                                                    }`}
+                                                className={`w-5 h-5 px-1 py-1 bg-[#464646] rounded-full transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                                             >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    d="M19 9l-7 7-7-7"
-                                                />
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                                             </svg>
                                         </button>
 
+                                        {/* Dropdown */}
                                         {isOpen && (
-                                            <ul className="absolute left-0 top-full mt-2 w-48 bg-[#111] border border-white/10 rounded-xl shadow-lg py-2 z-50">
-                                                {SERVICE_DROPDOWN.map((service) => (
-                                                    <li key={service.text}>
-                                                        <Link
-                                                            to={service.url}
-                                                            onClick={() => setIsOpen(false)}
-                                                            className="block px-4 py-2 text-white text-sm hover:bg-[#F3FE00] hover:text-black transition-all duration-300"
-                                                        >
-                                                            {service.text}
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </ul>
+                                            <div className="absolute left-0 top-full w-56 bg-[#090909] z-[90] border-t border-[#1a1a1a] animate-fadeIn">
+                                                <ServiceHover />
+                                            </div>
                                         )}
                                     </div>
                                 ) : (
@@ -125,86 +460,115 @@ export default function Header() {
                             </li>
                         ))}
                     </ul>
-                    <div className="flex items-center gap-3">
+
+                    {/* Right Side */}
+                    <div className="hidden md:flex items-center gap-3">
                         <button
                             onClick={toggleTheme}
-                            className="w-[52px] hidden md:flex h-[32px] rounded-[16px] p-[3px] items-center justify-center bg-white transition-all duration-300  hover:text-black"
+                            className="w-[52px] h-[32px] rounded-[16px] p-[3px] flex items-center justify-center bg-white hover:text-black transition-all duration-300"
                         >
                             {theme === "light" ? (
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                    className="w-5 h-5"
-                                >
-                                    <path d="M12 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Zm9-5a1 1 0 0 1 1 1h2a1 1 0 1 1 0 2h-2a1 1 0 1 1-2 0Zm-18 0a1 1 0 0 1 1 1H2a1 1 0 1 1 0 2h2a1 1 0 1 1 0-2ZM4.22 4.22a1 1 0 0 1 1.42 0l1.42 1.42a1 1 0 1 1-1.42 1.42L4.22 5.64a1 1 0 0 1 0-1.42Zm14.14 14.14a1 1 0 0 1 1.42 0l1.42 1.42a1 1 0 1 1-1.42 1.42l-1.42-1.42a1 1 0 0 1 0-1.42ZM17.66 4.22a1 1 0 0 1 1.42 1.42l-1.42 1.42a1 1 0 1 1-1.42-1.42L17.66 4.22ZM6.34 19.78a1 1 0 0 1 1.42-1.42l1.42 1.42a1 1 0 0 1-1.42 1.42L6.34 19.78Z" />
+                                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Zm9-5a1 1 0 0 1 1 1h2a1 1 0 1 1 0 2h-2a1 1 0 1 1-2 0Z" />
                                 </svg>
                             ) : (
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                    className="w-5 h-5"
-                                >
+                                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M21.64 13a9 9 0 0 1-9.64 8.94A9 9 0 0 1 11 2.36 7 7 0 0 0 21.64 13Z" />
                                 </svg>
                             )}
                         </button>
 
-                        <div className="hidden md:flex justify-end">
-                            <Link
-                                to="/work"
-                                className="group relative flex items-center justify-center gap-3 px-6 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden"
-                            >
-                                <span className="transition-all duration-300 group-hover:opacity-0">
-                                    Work with us
-                                </span>
-                                <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100">
-                                    Let’s Talk
-                                </span>
-                                <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
-                                    <ButtonArrow />
-                                </span>
-                            </Link>
-                        </div>
+                        <Link
+                            to="/work"
+                            className="group relative flex items-center justify-center gap-3 px-6 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden"
+                        >
+                            <span className="transition-all duration-300 group-hover:opacity-0">Work with us</span>
+                            <span className="absolute opacity-0 transition-all duration-300 group-hover:opacity-100">Let’s Talk</span>
+                            <span className="w-5 h-5 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0">
+                                <ButtonArrow />
+                            </span>
+                        </Link>
                     </div>
 
-                    <button
-                        onClick={() => setMenuOpen(!menuOpen)}
-                        className="md:hidden text-white focus:outline-none"
-                    >
+                    {/* Mobile Toggler */}
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-white focus:outline-none">
                         {menuOpen ? (
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-7 h-7">
+                            <svg className="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         ) : (
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-7 h-7">
+                            <svg className="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         )}
                     </button>
                 </nav>
 
+                {/* Mobile Menu */}
+                {/* {menuOpen && (
+      <div className="md:hidden mt-4 bg-[#0D0D0D] border-t border-gray-800 z-50">
+        <ul className="flex flex-col gap-4 py-4 px-4">
+          {HEADER_LINKS.map((item) => (
+            <li key={item.text} className="relative">
+              {item.text === "Services" ? (
+                <div>
+                  <button
+                    onClick={() => setIsOpen((prev) => !prev)}
+                    className="w-full text-white text-lg font-medium flex items-center justify-between px-4 py-2 hover:text-[#F3FE00] transition-all duration-300"
+                  >
+                    Services
+                    <svg
+                      className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+
+                  {isOpen && (
+                    <ul className="mt-2 bg-[#111] border border-white/10 rounded-xl py-2">
+                      <ServiceHover />
+                    </ul>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  to={item.url}
+                  onClick={() => setMenuOpen(false)}
+                  className="block text-white text-lg font-medium px-4 py-2 hover:text-[#F3FE00] transition-all duration-300"
+                >
+                  {item.text}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )} */}
+                {/* Mobile Menu */}
                 {menuOpen && (
-                    <div className="md:hidden text-center mt-6 bg-black border-t border-gray-800">
+                    <div className="md:hidden mt-4 bg-[#0D0D0D] border-t border-gray-800 z-50">
                         <ul className="flex flex-col gap-4 py-4 px-4">
                             {HEADER_LINKS.map((item) => (
-                                <li key={item.text}>
+                                <li key={item.text} className="relative">
                                     {item.text === "Services" ? (
                                         <div>
                                             <button
                                                 onClick={() => setIsOpen((prev) => !prev)}
-                                                className="w-full text-white text-xl font-medium hover:text-[#F3FE00] flex items-center gap-2 justify-center"
+                                                className="w-full text-white text-lg font-medium flex items-center justify-between px-4 py-2 hover:text-[#F3FE00] transition-all duration-300"
                                             >
-                                                <span >Services</span>
+                                                Services
                                                 <svg
+                                                    className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     fill="none"
                                                     viewBox="0 0 24 24"
                                                     strokeWidth={2}
                                                     stroke="currentColor"
-                                                    className={`w-5 h-5 px-1 py-1 bg-[#464646] rounded-full transition-transform duration-300 ${isOpen ? "rotate-180" : ""
-                                                        }`}
                                                 >
                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                                                 </svg>
@@ -212,20 +576,7 @@ export default function Header() {
 
                                             {isOpen && (
                                                 <ul className="mt-2 bg-[#111] border border-white/10 rounded-xl py-2">
-                                                    {SERVICE_DROPDOWN.map((service) => (
-                                                        <li key={service.text}>
-                                                            <Link
-                                                                to={service.url}
-                                                                onClick={() => {
-                                                                    setMenuOpen(false);
-                                                                    setIsOpen(false);
-                                                                }}
-                                                                className="block px-4 py-2 text-white text-sm hover:bg-[#F3FE00] hover:text-black transition-all duration-300"
-                                                            >
-                                                                {service.text}
-                                                            </Link>
-                                                        </li>
-                                                    ))}
+                                                    <ServiceHover />
                                                 </ul>
                                             )}
                                         </div>
@@ -233,7 +584,7 @@ export default function Header() {
                                         <Link
                                             to={item.url}
                                             onClick={() => setMenuOpen(false)}
-                                            className="block text-white text-xl font-medium hover:text-[#F3FE00] transition-all duration-300"
+                                            className="block text-white text-lg font-medium px-4 py-2 hover:text-[#F3FE00] transition-all duration-300"
                                         >
                                             {item.text}
                                         </Link>
@@ -241,21 +592,25 @@ export default function Header() {
                                 </li>
                             ))}
 
-                            <div className="mt-6 text-center">
+                            {/* Work With Us button for mobile */}
+                            <li className="mt-4">
                                 <Link
                                     to="/work"
                                     onClick={() => setMenuOpen(false)}
-                                    className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300"
+                                    className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 w-full justify-center"
                                 >
                                     Work with us
                                     <ButtonArrow />
                                 </Link>
-                            </div>
+                            </li>
                         </ul>
                     </div>
                 )}
+
             </div>
         </header>
+
     );
 }
+
 

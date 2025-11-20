@@ -57,6 +57,10 @@ import FaqIcon from "./faq-icon";
 import DesignIcon from "./design-icon";
 import BrandingIcon from "./branding-icon";
 import NoCodeIcon from "./no-code-icon";
+import CollectIcon from "./collect-icon";
+import AnalysIcon from "./analyz-icon";
+import DeliverIcon from "./deliver-icon";
+import PlanIcon from "./plan-icon";
 export {
     FigmaIcon,
     HeroIcon,
@@ -117,5 +121,10 @@ export {
     DesignIcon,
     BrandingIcon,
     NoCodeIcon,
+    CollectIcon,
+    AnalysIcon,
+    DeliverIcon,
+    PlanIcon,
+    
 
 }

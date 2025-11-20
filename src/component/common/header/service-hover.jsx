@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import DesignIcon from "../../../assets/icon/design-icon";
 import NoCodeIcon from "../../../assets/icon/no-code-icon";
 import BrandingIcon from "../../../assets/icon/branding-icon";
+import { ExperinceIcon, GuidelineIcon, IntrectionIcon, ProductIcon, ResearchIcon, RoadmapIcon, TestingIcon, UiUxIcon, UxAuditIcon } from "../../../assets/icon/define-icon";
 
 const PRODUCT_LINKS = [
     {
@@ -28,57 +29,66 @@ const PRODUCT_LINKS = [
 const PRODUCT_CARDS = [
     {
         id: 1,
-        icon: DesignIcon,
+        icon: ProductIcon,
         title: "Product Strategy Consulting",
         desc: "Shape your product vision with insights, market analysis, and growth strategies.",
+        path:'/product'
     },
     {
         id: 2,
-        icon: DesignIcon,
+        icon: ResearchIcon,
         title: "UX Research & Insights",
         desc: "Uncover user needs and behaviors through research that drives design decisions.",
+        path:'/uxsearch'
     },
     {
         id: 3,
-        icon: DesignIcon,
+        icon: RoadmapIcon,
         title: "Product Strategy & Roadmapping",
         desc: "Align goals and deliverables into a strategic roadmap for market success.",
+        path:'/roadmap'
     },
     {
         id: 4,
-        icon: DesignIcon,
+        icon: ExperinceIcon,
         title: "Experience Architecture",
         desc: "Design intuitive structures and user flows that make products effortless.",
+        path:'/experience'
     },
     {
         id: 5,
-        icon: DesignIcon,
+        icon: UiUxIcon,
         title: "UI/UX Design",
         desc: "Deliver striking, functional interfaces that enhance user satisfaction.",
+        path:'/uiuxdesign'
     },
     {
         id: 6,
-        icon: DesignIcon,
+        icon: GuidelineIcon,
         title: "Design Systems & Guidelines",
         desc: "Develop scalable ecosystems that ensure brand consistency across platforms.",
+        path:'/designguideline'
     },
     {
         id: 7,
-        icon: DesignIcon,
+        icon: TestingIcon,
         title: "Prototyping & User Testing",
         desc: "Turn ideas into prototypes, validate with users, and refine before launch.",
+        path:'/prototyping/testing'
     },
     {
         id: 8,
-        icon: DesignIcon,
+        icon: IntrectionIcon,
         title: "Interaction & Motion Design",
         desc: "Enrich experiences with animations that bring interfaces to life.",
+        path:'/interaction/design'
     },
     {
         id: 9,
-        icon: DesignIcon,
+        icon: UxAuditIcon,
         title: "UX Audit & Product Optimization",
         desc: "Identify usability challenges and unlock opportunities through evaluations.",
+        path:'/uxaudit'
     },
 
 ];
@@ -86,63 +96,79 @@ const PRODUCT_CARDS = [
 const BRANDING_CARDS = [
     {
         id: 1,
-        icon: BrandingIcon,
+        icon: ProductIcon,
         title: "Brand Identity Design",
-        desc: "Craft a visual identity that defines and differentiates your brand.",
+        desc: "Craft brand visuals — logo, typography, and color ,reflecting your purpose.",
+        path:'/brand/identity'
     },
     {
         id: 2,
-        icon: BrandingIcon,
-        title: "Logo & Collateral",
-        desc: "Design logos and visual assets that communicate your brand essence.",
+        icon: ResearchIcon,
+        title: "Brand Strategy & Positioning",
+        desc: "Define how your brand communicates and connects across touchpoints.",
+        path:'/brand/positioning'
     },
     {
         id: 3,
-        icon: BrandingIcon,
-        title: "Brand Strategy",
-        desc: "Develop cohesive brand positioning and messaging that connects.",
+        icon: RoadmapIcon,
+        title: "Creative Direction",
+        desc: "Develop cohesive visual direction aligning design, story, and values.",
+        path:'/creatve/direction'
     },
     {
         id: 4,
-        icon: BrandingIcon,
-        title: "Logo & Collateral",
-        desc: "Design logos and visual assets that communicate your brand essence.",
+        icon: ExperinceIcon,
+        title: "Visual Communication Design",
+        desc: "Deliver cohesive assets from social to campaigns , reinforcing consistency.",
+        path:'/visual/design'
     },
     {
         id: 5,
-        icon: BrandingIcon,
-        title: "Brand Strategy",
-        desc: "Develop cohesive brand positioning and messaging that connects.",
+        icon: UiUxIcon,
+        title: "Rebranding & Evolution",
+        desc: "Transform existing identities into modern, future-ready brand systems.",
+        path:'/rebranding/evolution'
     },
 ];
 
 const NOCODE_CARDS = [
     {
         id: 1,
-        icon: NoCodeIcon,
-        title: "No-Code App Development",
-        desc: "Build modern web and mobile apps rapidly without coding complexity.",
+        icon: ProductIcon,
+        title: "Webflow Development",
+        desc: "Build responsive, pixel-perfect websites with seamless no-code performance.",
+        path:'/webflow/development'
     },
     {
         id: 2,
-        icon: NoCodeIcon,
-        title: "Workflow Automation",
-        desc: "Streamline your business with powerful automation tools.",
+        icon: ResearchIcon,
+        title: "Framer Development",
+        desc: "Create fast, interactive sites with motion and creative precision.",
+        path:'/framer/development'
     },
     {
         id: 3,
-        icon: NoCodeIcon,
-        title: "Integration Setup",
-        desc: "Connect systems seamlessly using no-code platforms like Zapier.",
+        icon: RoadmapIcon,
+        title: "Bubble App Development",
+        desc: "Turn complex ideas into scalable, powerful no-code web apps.",
+        path:'/bubble/development'
     },
     {
         id: 4,
-        icon: NoCodeIcon,
-        title: "Integration Setup",
-        desc: "Connect systems seamlessly using no-code platforms like Zapier.",
+        icon: ExperinceIcon,
+        title: "Figma Sites",
+        desc: "Bring Figma designs to life with unmatched pixel-perfect accuracy.",
+        path:'/figma/sites'
+    },
+     {
+        id: 5,
+        icon: UiUxIcon,
+        title: "Platform Maintenance & Support",
+        desc: "Keep platforms stable with regular updates and performance care.",
+        path:'/platform/support'
     },
 ];
-export default function ServiceHover() {
+export default function ServiceHover({ onClose }) {
     const [activeTab, setActiveTab] = useState("product");
 
     const renderCards = () => {
@@ -152,7 +178,7 @@ export default function ServiceHover() {
         if (activeTab === "no-code") cards = NOCODE_CARDS;
     }
     return (
-        <section className="md:py-10 py-8">
+        <section className="md:py-10 py-8 bg-[#090909]">
             <div className="container">
                 <div className="grid grid-cols-1 md:[grid-template-columns:minmax(100px,279px)_minmax(100px,927px)] gap-4 md:gap-6">
                     <div className="md:sticky md:top-10 ">
@@ -180,8 +206,9 @@ export default function ServiceHover() {
                                 if (activeTab === "no-code") cards = NOCODE_CARDS;
 
                                 return cards.map((card) => (
-                                    <Link to='#'
+                                    <Link to={card.path}
                                         key={card.id}
+                                         onClick={onClose}
                                         className="flex gap-3 px-5 py-3 hover:bg-[#F3FE0014] rounded-xl transition-all duration-200"
                                     >
                                         <div className="flex shrink-0">

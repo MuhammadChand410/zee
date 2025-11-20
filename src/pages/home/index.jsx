@@ -1,8 +1,8 @@
 
+import ContactUs from "../../component/common/header/contact-us";
 import CursorGlow from "../../component/common/header/curser-glow";
 import Advantage from "./advantage";
 import BlogsSection from "./blogs-section";
-import ContactUs from "./contact-us";
 import FrameHome from "./frame-home";
 import HeroSectin from "./hero";
 import NoiseEffect from "./noise-effect";

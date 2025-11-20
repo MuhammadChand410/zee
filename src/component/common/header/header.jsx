@@ -40,7 +40,7 @@ export default function Header() {
 
                     <ul className="hidden md:flex gap-8 relative">
                         {HEADER_LINKS.map((item) => (
-                            <li key={item.text} className="relative">
+                            <li key={item.text} className="relative ">
                                 {item.text === "Services" ? (
                                     <div
                                         className="relative"
@@ -48,7 +48,7 @@ export default function Header() {
                                         onMouseLeave={() => window.innerWidth >= 768 && setIsOpen(false)} >
                                         <button
                                             onClick={() => window.innerWidth < 768 && setIsOpen((prev) => !prev)}
-                                            className="text-white text-lg font-normal hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 flex items-center gap-1 transition-all duration-300">
+                                            className="text-white text-lg font-normal cursor-pointer hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 flex items-center gap-1 transition-all duration-300">
                                             Services
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -62,11 +62,14 @@ export default function Header() {
                                         </button>
 
                                         {isOpen && (
+                                        
+
                                             <div className="flex justify-center">
-                                                <div className="absolute top-full  w-screen bg-[#090909] z-[90] border-t border-[#1a1a1a] animate-fadeIn" >
-                                                    <ServiceHover />
+                                                <div className="absolute top-[30px] w-screen bg-[#090909] z-[90] border-t border-[#1a1a1a] animate-fadeIn" >
+                                                    <ServiceHover onClose={() => setIsOpen(false)}/>
                                                 </div>
                                             </div>
+                                    
                                         )}
                                     </div>
                                 ) : (
@@ -80,9 +83,9 @@ export default function Header() {
                         ))}
                     </ul>
                     <div className="hidden md:flex items-center gap-3">
-                        <button
+                        {/* <button
                             onClick={toggleTheme}
-                            className="w-[52px] h-[32px] rounded-[16px] p-[3px] flex items-center justify-center bg-white hover:text-black transition-all duration-300"
+                            className="w-[52px]  h-[32px] rounded-[16px] p-[3px] flex items-center justify-center bg-white hover:text-black transition-all duration-300"
                         >
                             {theme === "light" ? (
                                 <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -93,7 +96,7 @@ export default function Header() {
                                     <path d="M21.64 13a9 9 0 0 1-9.64 8.94A9 9 0 0 1 11 2.36 7 7 0 0 0 21.64 13Z" />
                                 </svg>
                             )}
-                        </button>
+                        </button> */}
 
                         <Link
                             to="/work"
@@ -106,7 +109,7 @@ export default function Header() {
                         </Link>
                     </div>
 
-                    <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-white focus:outline-none">
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden cursor-pointer text-white focus:outline-none">
                         {menuOpen ? (
                             <svg className="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

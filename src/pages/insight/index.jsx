@@ -1,4 +1,4 @@
-import ContactUs from "./contact-us";
+import ContactUs from "../../component/common/header/contact-us";
 import HorizontalScrolling from "./horizontal-scrolling";
 import InsightHero from "./insight-hero";
 import LargeBlog from "./large-blog";

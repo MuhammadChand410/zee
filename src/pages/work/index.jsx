@@ -1,4 +1,4 @@
-import ContactUs from "./contact-us";
+import ContactUs from "../../component/common/header/contact-us";
 import IndustryWork from "./industry-work";
 import WorkHero from "./work-hero";
 

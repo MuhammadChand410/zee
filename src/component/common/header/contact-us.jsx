@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
-import LinkdenIcon from "../../assets/icon/linkden-icon";
-import TickIcon from "../../assets/icon/tick-icon";
 import React, { useState } from "react";
-import { Ali, Babar, BannerAward, TechBehemoths, TrustPiolt, UiUx } from "../../assets/images";
-import HeroContant from "../../component/common/hero-contant/hero-contant";
+import { Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import TickIcon from "../../../assets/icon/tick-icon";
+import LinkdenIcon from "../../../assets/icon/linkden-icon";
+import { Ali, Babar, BannerAward, TechBehemoths, TrustPiolt, UiUx } from "../../../assets/images";
+import HeroContant from "../hero-contant/hero-contant";
 
 const contactFormValidations = Yup.object({
     name: Yup.string().required("Name is required"),
@@ -28,14 +28,14 @@ const LINKDEN_PROFILE = [
         thumbnail: Ali,
         title: 'Muhammad Ali',
         desc: 'Director & Co-Founder',
-        path: 'https://www.linkedin.com/in/mohammad-ali-ui-ux-consultant/'
+        path:'https://www.linkedin.com/in/mohammad-ali-ui-ux-consultant/'
     },
     {
         id: 2,
         thumbnail: Babar,
         title: 'Muhammad Babar',
         desc: 'Director & Co-Founder',
-        path: 'https://www.linkedin.com/in/muhammadbabar-uxui/'
+        path:'https://www.linkedin.com/in/muhammadbabar-uxui/'
     },
 ]
 

@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import DesignIcon from "../../../assets/icon/design-icon";
 import NoCodeIcon from "../../../assets/icon/no-code-icon";
 import BrandingIcon from "../../../assets/icon/branding-icon";
@@ -32,63 +32,63 @@ const PRODUCT_CARDS = [
         icon: ProductIcon,
         title: "Product Strategy Consulting",
         desc: "Shape your product vision with insights, market analysis, and growth strategies.",
-        path:'/product'
+        path: '/product'
     },
     {
         id: 2,
         icon: ResearchIcon,
         title: "UX Research & Insights",
         desc: "Uncover user needs and behaviors through research that drives design decisions.",
-        path:'/uxsearch'
+        path: '/uxsearch'
     },
     {
         id: 3,
         icon: RoadmapIcon,
         title: "Product Strategy & Roadmapping",
         desc: "Align goals and deliverables into a strategic roadmap for market success.",
-        path:'/roadmap'
+        path: '/roadmap'
     },
     {
         id: 4,
         icon: ExperinceIcon,
         title: "Experience Architecture",
         desc: "Design intuitive structures and user flows that make products effortless.",
-        path:'/experience'
+        path: '/experience'
     },
     {
         id: 5,
         icon: UiUxIcon,
         title: "UI/UX Design",
         desc: "Deliver striking, functional interfaces that enhance user satisfaction.",
-        path:'/uiuxdesign'
+        path: '/uiuxdesign'
     },
     {
         id: 6,
         icon: GuidelineIcon,
         title: "Design Systems & Guidelines",
         desc: "Develop scalable ecosystems that ensure brand consistency across platforms.",
-        path:'/designguideline'
+        path: '/designguideline'
     },
     {
         id: 7,
         icon: TestingIcon,
         title: "Prototyping & User Testing",
         desc: "Turn ideas into prototypes, validate with users, and refine before launch.",
-        path:'/prototyping/testing'
+        path: '/prototyping/testing'
     },
     {
         id: 8,
         icon: IntrectionIcon,
         title: "Interaction & Motion Design",
         desc: "Enrich experiences with animations that bring interfaces to life.",
-        path:'/interaction/design'
+        path: '/interaction/design'
     },
     {
         id: 9,
         icon: UxAuditIcon,
         title: "UX Audit & Product Optimization",
         desc: "Identify usability challenges and unlock opportunities through evaluations.",
-        path:'/uxaudit'
+        path: '/uxaudit'
     },
 
 ];
@@ -99,35 +99,35 @@ const BRANDING_CARDS = [
         icon: ProductIcon,
         title: "Brand Identity Design",
         desc: "Craft brand visuals — logo, typography, and color ,reflecting your purpose.",
-        path:'/brand/identity'
+        path: '/brand/identity'
     },
     {
         id: 2,
         icon: ResearchIcon,
         title: "Brand Strategy & Positioning",
         desc: "Define how your brand communicates and connects across touchpoints.",
-        path:'/brand/positioning'
+        path: '/brand/positioning'
     },
     {
         id: 3,
         icon: RoadmapIcon,
         title: "Creative Direction",
         desc: "Develop cohesive visual direction aligning design, story, and values.",
-        path:'/creatve/direction'
+        path: '/creatve/direction'
     },
     {
         id: 4,
         icon: ExperinceIcon,
         title: "Visual Communication Design",
         desc: "Deliver cohesive assets from social to campaigns , reinforcing consistency.",
-        path:'/visual/design'
+        path: '/visual/design'
     },
     {
         id: 5,
         icon: UiUxIcon,
         title: "Rebranding & Evolution",
         desc: "Transform existing identities into modern, future-ready brand systems.",
-        path:'/rebranding/evolution'
+        path: '/rebranding/evolution'
     },
 ];
 
@@ -137,37 +137,38 @@ const NOCODE_CARDS = [
         icon: ProductIcon,
         title: "Webflow Development",
         desc: "Build responsive, pixel-perfect websites with seamless no-code performance.",
-        path:'/webflow/development'
+        path: '/webflow/development'
     },
     {
         id: 2,
         icon: ResearchIcon,
         title: "Framer Development",
         desc: "Create fast, interactive sites with motion and creative precision.",
-        path:'/framer/development'
+        path: '/framer/development'
     },
     {
         id: 3,
         icon: RoadmapIcon,
         title: "Bubble App Development",
         desc: "Turn complex ideas into scalable, powerful no-code web apps.",
-        path:'/bubble/development'
+        path: '/bubble/development'
     },
     {
         id: 4,
         icon: ExperinceIcon,
         title: "Figma Sites",
         desc: "Bring Figma designs to life with unmatched pixel-perfect accuracy.",
-        path:'/figma/sites'
+        path: '/figma/sites'
     },
-     {
+    {
         id: 5,
         icon: UiUxIcon,
         title: "Platform Maintenance & Support",
         desc: "Keep platforms stable with regular updates and performance care.",
-        path:'/platform/support'
+        path: '/platform/support'
     },
 ];
+
 export default function ServiceHover({ onClose }) {
     const [activeTab, setActiveTab] = useState("product");
 
@@ -208,7 +209,7 @@ export default function ServiceHover({ onClose }) {
                                 return cards.map((card) => (
                                     <Link to={card.path}
                                         key={card.id}
-                                         onClick={onClose}
+                                        onClick={onClose}
                                         className="flex gap-3 px-5 py-3 hover:bg-[#F3FE0014] rounded-xl transition-all duration-200"
                                     >
                                         <div className="flex shrink-0">
@@ -230,5 +231,5 @@ export default function ServiceHover({ onClose }) {
                 </div>
             </div>
         </section>
-    )};
-
+    )
+};

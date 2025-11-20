@@ -5,7 +5,7 @@ import DiscovertOne from "../../assets/icon/discovery-one";
 import SecondSvg from "../../assets/icon/second-svg";
 import ValidationSvg from "../../assets/icon/validatiob-svg";
 import Services from "../../component/common/services/service";
-import { DesiignIcon , DefineIcon, IntegrateIcon } from "../../assets/icon/define-icon";
+import { IntegrateIcon } from "../../assets/icon/define-icon";
 import ProcessIcon from "../../assets/icon/process-icon";
 
 export default function RebrandingEvolution() {

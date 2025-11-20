@@ -21,7 +21,6 @@ import TwitterIcon from "./twitter-icon";
 import HeroStarIcon from "./hero-star-icon";
 import ArrowBoxIcon from "./arrow-box-icon";
 import ArrowAbout from "./arrow-about";
-// import VerifiedIcon from "./verified-icon";
 import TickIcon from "./verified-icon";
 import ViewIcon from "./view-icon";
 import WebIcon from "./web-icon";
@@ -85,7 +84,6 @@ export {
     HeroStarIcon,
     ArrowBoxIcon,
     ArrowAbout,
-    // VerifiedIcon,
     TickIcon,
     ViewIcon,
     WebIcon,

@@ -1,5 +1,3 @@
-import { icons } from "lucide-react";
-import ButtonArrow from "../../assets/icon/button-arrow";
 import ClutchIcon from "../../assets/icon/clutch-icon";
 import StarIcon from "../../assets/icon/star-icon";
 import HeroContant from "../../component/common/hero-contant/hero-contant";

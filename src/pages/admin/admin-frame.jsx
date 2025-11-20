@@ -1,4 +1,3 @@
-import { section } from "framer-motion/client";
 import { AdminFrameImage, TrendingBlogImage } from "../../assets/images";
 import DotIcon from "../../assets/icon/dot-icon";
 

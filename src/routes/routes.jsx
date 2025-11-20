@@ -6,7 +6,6 @@ import Work from "../pages/work";
 import Insights from "../pages/insight";
 import ScrollToTop from "./scroll-to-top";
 import AdmainPage from "../pages/admin";
-
 import ProductStrategy from "../pages/product-design/product";
 import UxSearch from "../pages/product-design/ux-search";
 import ProductRoadmap from "../pages/product-design/roadmap";

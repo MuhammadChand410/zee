@@ -1,10 +1,8 @@
 import AnalysisSvg from "../../assets/icon/analysis-svg";
-import { AuditIcon, CreateIcon, DesiignIcon, DocumentIcon, IntegrateIcon, PrototypeIcon, } from "../../assets/icon/define-icon";
-import DiscoveryIcon from "../../assets/icon/discovery-icon";
+import { AuditIcon, CreateIcon, DocumentIcon, IntegrateIcon, } from "../../assets/icon/define-icon";
 import DiscovertOne from "../../assets/icon/discovery-one";
 import SecondSvg from "../../assets/icon/second-svg";
 import ValidationSvg from "../../assets/icon/validatiob-svg";
-import ValidationIcon from "../../assets/icon/validation-icon";
 import Services from "../../component/common/services/service";
 
 

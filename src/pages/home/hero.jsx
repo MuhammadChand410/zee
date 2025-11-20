@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import HeroIcon from "../../assets/icon/hero-icon"
 import HeroStarIcon from "../../assets/icon/hero-star-icon";
-import { AdiQat, Cisco, Figma, FigmaB, HeroBg, NissanMotor, Repurpose, Sketch, Trafilea, Vector, W, WalMart, Xd, YallaMotor } from "../../assets/images"
-import React, { useState } from "react";
+import { Figma, FigmaB, HeroBg, NissanMotor, Repurpose, Sketch, Trafilea, Vector, W, WalMart, Xd, YallaMotor } from "../../assets/images"
 import ButtonHero from "../../component/common/header/button-hero";
 export default function HeroSectin({
     className,

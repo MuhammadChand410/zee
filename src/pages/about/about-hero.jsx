@@ -44,8 +44,6 @@ export default function AboutHero() {
     return (
         <section className="sm:py-20 py-8 bg-black">
             <div className="container">
-                {/* <div className="relative before:content-[''] before:absolute before:top-10 left-0 sm:before:left-20 before:w-[300px] before:h-[300px] before:from-[#202020] before:to-[#333333] before:rounded-[60%] before:blur-2xl before:-z-10"></div> */}
-
                 <div className="grid gap-8 sm:gap-16">
                     <div className="grid gap-7">
                         <div className="grid justify-center">
@@ -106,7 +104,7 @@ export default function AboutHero() {
                                                 <card.icon />
                                             </span>
                                             <p className="text-[#CACACA] text-sm font-normal">{card.desc}</p>
-                                            <Link to='#' className="px-3 py-1 border border-[#B5B5B5] rounded-full">
+                                            <Link to='#' className="px-3 py-1 border border-[#B5B5B5] rounded-full" aria-label="about icon">
                                                 <ArrowAbout />
                                             </Link>
                                         </div>

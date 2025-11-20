@@ -1,11 +1,10 @@
 import AnalysisSvg from "../../assets/icon/analysis-svg";
-import DeliverIcon from "../../assets/icon/deliver-icon";
 import DiscoveryIcon from "../../assets/icon/discovery-icon";
 import DiscovertOne from "../../assets/icon/discovery-one";
 import SecondSvg from "../../assets/icon/second-svg";
 import ValidationSvg from "../../assets/icon/validatiob-svg";
 import Services from "../../component/common/services/service";
-import { DesiignIcon , DefineIcon, TestIcon, GuideIcon } from "../../assets/icon/define-icon";
+import { DefineIcon, TestIcon, GuideIcon } from "../../assets/icon/define-icon";
 
 export default function CreativeDirection() {
     const IMPACT_CARD = [

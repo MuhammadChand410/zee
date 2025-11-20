@@ -45,18 +45,6 @@ export default function AboutMission() {
                             {MISSION_CARD.map((card =>
                                 <div key={card.id} className="relative grid md:justify-start justify-end">
                                     <span className={`absolute -top-9.5 ${card.id === 1 ? 'right-[36px]' : card.id === 2 ? 'right-[15px]' : card.id === 3 ? 'right-[13px]' : 'right-[1px]'}`}><card.Icon /></span>
-                                    {/* <span
-                                        className={`absolute sm:-top-9.5 sm:right-auto left-1/2 -translate-x-1/2 -top-8 sm:translate-x-0 ${card.id === 1
-                                            ? 'sm:right-[36px]'
-                                            : card.id === 2
-                                                ? 'sm:right-[15px]'
-                                                : card.id === 3
-                                                    ? 'sm:right-[13px]'
-                                                    : 'sm:right-[1px]'
-                                            }`}
-                                    >
-                                        <card.Icon />
-                                    </span> */}
                                     <div className="relative">
                                         <h2 className="text-[#F3FE00] text-[60px] font-bold">{card.title}</h2>
                                         <p className="text-[23px] text-[#C2C2C2] font-normal">{card.desc}</p>

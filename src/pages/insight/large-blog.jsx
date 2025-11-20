@@ -1,5 +1,5 @@
 import DotIcon from "../../assets/icon/dot-icon";
-import { BlogImage, EllipseImage, LargeImage } from "../../assets/images";
+import { BlogImage, EllipseImage } from "../../assets/images";
 
 
 

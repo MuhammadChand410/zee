@@ -213,6 +213,7 @@ export default function Footer() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="transition hover:opacity-80"
+                                        aria-label="social link"
                                     >
                                         <card.icon />
                                     </Link>
@@ -224,7 +225,7 @@ export default function Footer() {
             </footer>
 
             <div className="floating_btn">
-                <a target="_blank" href="https://wa.me/">
+                <a target="_blank" href="https://wa.me/" aria-label="wattasapp">
                     <div className="contact_icon">
                         <i className="fa fa-whatsapp my-float"></i>
                     </div>

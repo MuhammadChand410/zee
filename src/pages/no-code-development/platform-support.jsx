@@ -1,11 +1,8 @@
 import AnalysisSvg from "../../assets/icon/analysis-svg";
-import { BuildIcon, IntegrateIcon, MaintainIcon, SupportIcon } from "../../assets/icon/define-icon";
-import DeliverIcon from "../../assets/icon/deliver-icon";
-import DiscoveryIcon from "../../assets/icon/discovery-icon";
+import { MaintainIcon, SupportIcon } from "../../assets/icon/define-icon";
 import DiscovertOne from "../../assets/icon/discovery-one";
 import ProcessIcon from "../../assets/icon/process-icon";
 import SecondSvg from "../../assets/icon/second-svg";
-import StrategryIcon from "../../assets/icon/strategy-icon";
 import ValidationSvg from "../../assets/icon/validatiob-svg";
 import ValidationIcon from "../../assets/icon/validation-icon";
 import Services from "../../component/common/services/service";

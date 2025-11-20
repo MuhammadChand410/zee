@@ -83,21 +83,6 @@ export default function Header() {
                         ))}
                     </ul>
                     <div className="hidden md:flex items-center gap-3">
-                        {/* <button
-                            onClick={toggleTheme}
-                            className="w-[52px]  h-[32px] rounded-[16px] p-[3px] flex items-center justify-center bg-white hover:text-black transition-all duration-300"
-                        >
-                            {theme === "light" ? (
-                                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Zm9-5a1 1 0 0 1 1 1h2a1 1 0 1 1 0 2h-2a1 1 0 1 1-2 0Z" />
-                                </svg>
-                            ) : (
-                                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M21.64 13a9 9 0 0 1-9.64 8.94A9 9 0 0 1 11 2.36 7 7 0 0 0 21.64 13Z" />
-                                </svg>
-                            )}
-                        </button> */}
-
                         <Link
                             to="/work"
                             className="group relative flex items-center justify-center gap-3 px-6 py-3 rounded-full border border-[#F3FE00] bg-[#F3FE00] text-[#0D0D0D] text-base font-semibold hover:bg-black hover:text-[#F3FE00] transition-all duration-300 overflow-hidden" >
@@ -109,7 +94,7 @@ export default function Header() {
                         </Link>
                     </div>
 
-                    <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden cursor-pointer text-white focus:outline-none">
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden cursor-pointer text-white focus:outline-none" aria-label="theme toggler">
                         {menuOpen ? (
                             <svg className="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

@@ -51,13 +51,6 @@ export default function WhoAreSection() {
                     <div className="flex justify-center">
                         <HeroContant subheading={`OUR CULTURE`} classNameSub={`!pb-4`} heading={`Behind The Scenes`} classNamehead={`!pb-4`} desc={`We believe in clear communication, proactive problem solving, and full transparency..`} />
                     </div>
-                    {/* <div className="flex gap-2">
-                        {IMAGE_WHO.map((card =>
-                            <div key={card.id}>
-                                <img src={card.thumbnail} alt="image-who" width={282} height={360} loading="lazy" />
-                            </div>
-                        ))}
-                    </div> */}
                     <div className="main-animate max-w-full overflow-hidden">
                         <div className="slider">
                             <div className="slide-trackk flex gap-2">

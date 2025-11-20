@@ -56,17 +56,7 @@
   gap: 8px;
   animation: 24s linear infinite scroll
 }
-/* .main-animate .slideee {
-  width: 381px;
-  
-  flex-shrink: 0;
-}
-.main-animate .slide-trackkk {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-  animation: 24s linear infinite scroll
-} */
+
  .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -155,15 +145,6 @@
   background-color: #FFFFFFE5;
   color: #0D0D0D;
 }
-
-
-/* @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(5px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animate-fadeIn {
-  animation: fadeIn 0.25s ease-in-out;
-} */
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }

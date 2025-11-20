@@ -1,5 +1,5 @@
 import AnalysisSvg from "../../assets/icon/analysis-svg";
-import { DefineIcon, DevelopIcon, MapIcon, ResearchIcon, ResearrchIcon, StructureIcon } from "../../assets/icon/define-icon";
+import { DefineIcon, DevelopIcon, ResearrchIcon} from "../../assets/icon/define-icon";
 import DiscovertOne from "../../assets/icon/discovery-one";
 import SecondSvg from "../../assets/icon/second-svg";
 import ValidationSvg from "../../assets/icon/validatiob-svg";

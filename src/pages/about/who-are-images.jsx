@@ -23,7 +23,7 @@ export default function WhoAreSection() {
             id: 5,
             thumbnail: ImageFour
         },
-         {
+        {
             id: 6,
             thumbnail: ImageOne
         },

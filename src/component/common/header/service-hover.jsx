@@ -192,13 +192,13 @@ export default function ServiceHover({ onClose }) {
                                 <div className="flex shrink-0">
                                     <link.icon />
                                 </div>
-                                <h2 className="text-base font-[Inter] font-semibold text-white">
+                                <h2 className="text-base text-start font-[Inter] font-semibold text-white">
                                     {link.title}
                                 </h2>
                             </button>
                         ))}
                     </div>
-                    <div className="max-h-[450px] overflow-y-auto pr-2">
+                    <div className="scrollable pr-2">
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
                             {(() => {
                                 let cards = [];

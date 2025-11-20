@@ -26,7 +26,7 @@ export default function AdmainHero() {
                         </div>
                     </div>
                     <div>
-                       <img src={DashboardHeroImage} alt="dashboard-image" width={1210} height={539} loading="lazy" />
+                        <img src={DashboardHeroImage} alt="dashboard-image" width={1210} height={539} loading="lazy" />
                     </div>
                 </div>
             </div>

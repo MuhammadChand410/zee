@@ -154,3 +154,18 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
+
+.scrollable {
+  max-height: 450px;
+  overflow-y: auto;
+
+  /* Firefox */
+  scrollbar-width: none; 
+}
+
+/* Chrome, Safari, Edge */
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+

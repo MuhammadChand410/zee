@@ -14,12 +14,12 @@ export default function AboutMission() {
         },
         {
             id: 2,
-            Icon: ClientsIcon, 
+            Icon: ClientsIcon,
             title: '200+',
             desc: 'Repeated Clients',
         },
         {
-            id: 3, 
+            id: 3,
             Icon: UserIcon,
             title: '30+',
             desc: 'UX Experts',

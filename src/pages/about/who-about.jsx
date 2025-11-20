@@ -12,13 +12,13 @@ export default function WhoAbout() {
             title: 'Our Team',
             desc: 'Our team of expert UI UX designers has a proven track record of creating innovative design solutions that transform businesses across various geographies.',
         },
-         {
+        {
             id: 2,
             icon: ClientIcon,
             title: 'Client-Centric Design',
             desc: 'At ZeeFrames, our unique design approach focuses on understanding client needs and collaborating to create exceptional, goal-driven digital various products.',
         },
-         {
+        {
             id: 3,
             icon: TestimotionalIcon,
             title: 'Testimonials Showcase',
@@ -29,15 +29,15 @@ export default function WhoAbout() {
         <section className="sm:py-20 py-8 bg-black">
             <div className="container">
                 <div className="flex lg:flex-row flex-col items-start md:items-center gap-8 lg:gap-20">
-                        <div className="">
-                            <img
-                                src={WhooImage}
-                                alt="who-image"
-                                width={390}
-                                height={392}
-                                loading="lazy"
-                            />
-                        </div>
+                    <div className="">
+                        <img
+                            src={WhooImage}
+                            alt="who-image"
+                            width={390}
+                            height={392}
+                            loading="lazy"
+                        />
+                    </div>
                     <div className="grid max-w-[680px] gap-12">
                         <div>
                             <HeroContant subheading='ABOUT' classNameSub='!text-start' heading='Who We Are' classNamehead={`!text-start`} desc='ZeeFrames is a specialized UI UX design agency with a focus on creating exceptional digital experiences. ZeeFrames is committed to delivering the best user experience possible for your business.' classNameDesc={`!text-start`} />

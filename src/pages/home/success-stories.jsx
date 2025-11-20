@@ -49,7 +49,7 @@ export default function SuccessStories() {
                     <div className="flex justify-center">
                         <div className="max-w-[596px]">
                             <HeroContant subheading='HOW WE HELPED OTHERS SUCCEED' heading='Our Creative Showcase' classNamehead={`!leading-[40px]`} desc='We have become experts in creating top-notch digital products. We design beautifully and
-                             develop excellently. And we care deeply about what we do.' classNameDesc={`md:!leading-normal !leading-[21px]`}/>
+                             develop excellently. And we care deeply about what we do.' classNameDesc={`md:!leading-normal !leading-[21px]`} />
                         </div>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">

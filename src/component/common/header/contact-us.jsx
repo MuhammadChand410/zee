@@ -28,14 +28,14 @@ const LINKDEN_PROFILE = [
         thumbnail: Ali,
         title: 'Muhammad Ali',
         desc: 'Director & Co-Founder',
-        path:'https://www.linkedin.com/in/mohammad-ali-ui-ux-consultant/'
+        path: 'https://www.linkedin.com/in/mohammad-ali-ui-ux-consultant/'
     },
     {
         id: 2,
         thumbnail: Babar,
         title: 'Muhammad Babar',
         desc: 'Director & Co-Founder',
-        path:'https://www.linkedin.com/in/muhammadbabar-uxui/'
+        path: 'https://www.linkedin.com/in/muhammadbabar-uxui/'
     },
 ]
 

@@ -60,7 +60,7 @@ export default function UxSearch() {
             title: 'Collect',
             desc: 'Gather relevant qualitative and quantitative data.'
         },
-    
+
         {
             id: 3,
             icon: AnalyzeIcon,
@@ -78,17 +78,17 @@ export default function UxSearch() {
     ]
     return (
         <>
-            <Services 
-            heading="UX RESEARCH & INSIGHTS"
-            desc="Understand Your Users Beyond Assumptions. We Uncover What Drives Real Behavior Through Research And Data."
-            impact_heading="Design Backed by Evidence" classNamehead='!max-w-[350px]'
-            impact_desc="Our UX Research & Insights reveal patterns, motivations, and expectations that shape better design decisions. We provide data you can act on, not guess from."
-            process_heading="A Strategic Process That Builds Strong Foundations"
-            why_heading="Why Are Our UX Research & Insights Services the Right Choice for You?"
-            impactListing={IMPACT_CARD}
-            faq={FAQS}
-            processCards={PROCESS_CARD}
-            
+            <Services
+                heading="UX RESEARCH & INSIGHTS"
+                desc="Understand Your Users Beyond Assumptions. We Uncover What Drives Real Behavior Through Research And Data."
+                impact_heading="Design Backed by Evidence" classNamehead='!max-w-[350px]'
+                impact_desc="Our UX Research & Insights reveal patterns, motivations, and expectations that shape better design decisions. We provide data you can act on, not guess from."
+                process_heading="A Strategic Process That Builds Strong Foundations"
+                why_heading="Why Are Our UX Research & Insights Services the Right Choice for You?"
+                impactListing={IMPACT_CARD}
+                faq={FAQS}
+                processCards={PROCESS_CARD}
+
             />
 
         </>

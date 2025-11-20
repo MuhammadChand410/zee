@@ -38,7 +38,7 @@ export default function Header() {
                         <img src={logoImage} alt="logo" width={179} height={36} />
                     </Link>
 
-                    <ul className="hidden md:flex gap-8 relative">
+                    <ul className="hidden md:flex gap-8 justify-center relative">
                         {HEADER_LINKS.map((item) => (
                             <li key={item.text} className="relative ">
                                 {item.text === "Services" ? (
@@ -48,7 +48,7 @@ export default function Header() {
                                         onMouseLeave={() => window.innerWidth >= 768 && setIsOpen(false)} >
                                         <button
                                             onClick={() => window.innerWidth < 768 && setIsOpen((prev) => !prev)}
-                                            className="text-white text-lg font-normal cursor-pointer hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 flex items-center gap-1 transition-all duration-300">
+                                            className="text-white text-lg font-normal cursor-pointer hover:text-[#F3FE00] hover:underline decoration-2 decoration-[#F3FE00] underline-offset-4 flex items-center gap-2 transition-all duration-300">
                                             Services
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -62,14 +62,13 @@ export default function Header() {
                                         </button>
 
                                         {isOpen && (
-                                        
 
                                             <div className="flex justify-center">
-                                                <div className="absolute top-[30px] w-screen bg-[#090909] z-[90] border-t border-[#1a1a1a] animate-fadeIn" >
-                                                    <ServiceHover onClose={() => setIsOpen(false)}/>
+                                                <div className="absolute top-[40px] w-screen bg-[#090909] z-[90] border-t border-[#1a1a1a] animate-fadeIn" >
+                                                    <ServiceHover onClose={() => setIsOpen(false)} />
                                                 </div>
                                             </div>
-                                    
+
                                         )}
                                     </div>
                                 ) : (
@@ -109,14 +108,14 @@ export default function Header() {
 
                 {menuOpen && (
                     <div className="md:hidden mt-4 bg-[#0D0D0D] border-t border-gray-800 z-50">
-                        <ul className="flex flex-col gap-4 py-4 px-4">
+                        <ul className="flex flex-col justify-center items-center gap-4 py-4 px-4">
                             {HEADER_LINKS.map((item) => (
                                 <li key={item.text} className="relative">
                                     {item.text === "Services" ? (
                                         <div>
                                             <button
                                                 onClick={() => setIsOpen((prev) => !prev)}
-                                                className="w-full text-white text-lg font-medium flex items-center justify-between px-4 py-2 hover:text-[#F3FE00] transition-all duration-300" >
+                                                className="w-full text-white text-lg font-medium flex cursor-pointer items-center justify-center gap-2 px-4 py-2 hover:text-[#F3FE00] transition-all duration-300" >
                                                 Services
                                                 <svg
                                                     className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}

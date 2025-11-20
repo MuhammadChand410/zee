@@ -14,7 +14,7 @@ export default function Services({ heading, desc, impact_heading, impact_desc, p
         setOpen(prev => prev === index ? null : index)
     }
     return (
-        <>   
+        <>
             <UxHero
                 hero_heading={heading}
                 hero_desc={desc} />
@@ -114,7 +114,7 @@ export default function Services({ heading, desc, impact_heading, impact_desc, p
                     </div>
                 </div>
             </section>
-            <ContactUs/>
+            <ContactUs />
         </>
     )
 }

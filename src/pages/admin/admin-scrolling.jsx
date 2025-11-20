@@ -68,15 +68,15 @@ export default function AdminScrolling() {
                         <div className="flex w-fit gap-3 ">
                             <button
                                 onClick={() => scroll("left")}
-                                className="px-5 py-2.5 rounded-full bg-white/30 hover:bg-[#F3FE00] transition"
+                                className="px-5 py-2.5 rounded-full bg-white/30 hover:bg-[#F3FE00] transition" aria-label="slider left"
                             >
-                                <SliderLeft size={22} className="" />
+                                <SliderLeft size={22} className=""  aria-label="slider left"/>
                             </button>
                             <button
                                 onClick={() => scroll("right")}
-                                className="px-5 py-2.5 rounded-full bg-white/30 hover:bg-[#F3FE00] transition"
+                                className="px-5 py-2.5 rounded-full bg-white/30 hover:bg-[#F3FE00] transition" aria-label="slider right"
                             >
-                                <SliderArrow size={22} className="" />
+                                <SliderArrow size={22} className="" aria-label="slider right"/>
                             </button>
                         </div>
                     </div>

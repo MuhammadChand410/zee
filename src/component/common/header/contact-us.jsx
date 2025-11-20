@@ -100,7 +100,7 @@ export default function ContactUs() {
                                         <div className="grid gap-1.5">
                                             <div className="flex items-center gap-2">
                                                 <h2 className="text-base font-medium text-white">{card.title}</h2>
-                                                <Link to={card.path} target="_blank">
+                                                <Link to={card.path} target="_blank" aria-label="linkden icon">
                                                     <LinkdenIcon />
                                                 </Link>
                                             </div>
